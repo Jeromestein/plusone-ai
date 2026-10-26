@@ -1,0 +1,109 @@
+/* Editorial service chapters share the original scroll-driven artwork. */
+.plusone-hero-title { font-size: 50px; }
+.plusone-service-navigation button { padding-block: 3px; }
+.plusone-header { gap: 24px; }
+.plusone-desktop-nav { gap: 20px; }
+.plusone-dialog-service-link { display: inline-block; margin-top: 18px; font-size: 12px; border-bottom: 1px solid currentColor; padding-bottom: 4px; }
+.plusone-chapter { position: relative; pointer-events: none; }
+.plusone-chapter-content { width: 80%; margin-left: auto; }
+.plusone-chapter-opening { min-height: 140svh; padding: 17svh 5vw 9svh 0; display: flex; flex-direction: column; justify-content: space-between; color: #f7f7ee; }
+.plusone-chapter-opening[data-nav-theme="light"] { color: #292d22; }
+.plusone-chapter-kicker { display: flex; align-items: center; gap: 24px; margin: 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; }
+.plusone-chapter-kicker > span { font: 400 20px/1 HWCigars, Georgia, serif; letter-spacing: 0; }
+.plusone-chapter-title { margin: 6svh 0 auto; max-width: 100%; font: 400 clamp(58px, 7.4vw, 132px)/0.98 HWCigars, Georgia, serif; letter-spacing: -0.055em; }
+.plusone-chapter-title > span, .plusone-chapter-title > em { display: block; }
+.plusone-chapter-title em { font-weight: 400; }
+.plusone-chapter-intro { max-width: 700px; margin: 18svh 0 0; font: 400 clamp(26px, 2.7vw, 43px)/1.08 HWCigars, Georgia, serif; letter-spacing: -0.025em; text-wrap: pretty; }
+.plusone-chapter-intro::first-letter { float: left; font: 400 2.25em/0.7 ImperialScript, cursive; padding: 0.12em 0.04em 0 0; }
+.plusone-chapter-paper { position: relative; padding: 70px 5vw 55px 0; background: #dcdcd0; color: #292d22; pointer-events: auto; box-shadow: -21vw 0 #dcdcd0; }
+.plusone-chapter-heading { max-width: 660px; margin-bottom: 44px; }
+.plusone-chapter-heading h3 { margin: 0 0 20px; font: 400 clamp(34px, 3.5vw, 52px)/1.06 HWCigars, Georgia, serif; letter-spacing: -0.035em; text-wrap: pretty; }
+.plusone-chapter-heading > p:last-child { max-width: 580px; font-size: 14px; line-height: 1.7; margin: 0; color: #505446; }
+.plusone-offerings { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.plusone-offerings article { padding-top: 22px; border-top: 1px solid #292d2240; }
+.plusone-offerings h4 { font: 400 28px/1.08 HWCigars, Georgia, serif; letter-spacing: -0.025em; margin: 0 0 16px; }
+.plusone-offerings p { margin: 0; color: #505446; font-size: 13px; line-height: 1.7; }
+.plusone-offerings ul { list-style: none; margin: 24px 0 0; padding: 0; }
+.plusone-offerings li { display: flex; gap: 10px; margin: 9px 0; font-size: 11px; line-height: 1.5; }
+.plusone-offerings li::before { content: "+"; opacity: 0.65; }
+.plusone-chapter-bottom { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; margin-top: 52px; padding-top: 22px; border-top: 1px solid #292d2240; }
+.plusone-text-link { display: inline-flex; align-items: center; gap: 32px; padding: 10px 0; font-size: 13px; text-align: left; border-bottom: 1px solid currentColor; }
+.plusone-text-link:hover, .plusone-back-link:hover { opacity: 0.65; }
+.plusone-back-link { font-size: 10px; }
+.plusone-chapter-paper :is(a,button):focus-visible, .plusone-footer :is(a,button):focus-visible { outline-color: #394933; }
+.plusone-study { margin: 0 0 44px; border: 1px solid #292d2238; background: #e9e9dc; overflow: hidden; }
+.plusone-study-toolbar { padding: 20px 26px; display: flex; justify-content: space-between; align-items: center; gap: 20px; border-bottom: 1px solid #292d2225; }
+.plusone-study-toolbar .plusone-eyebrow { margin: 0; }
+.plusone-study-choices { display: flex; flex-wrap: wrap; gap: 6px; }
+.plusone-study-choices button { padding: 9px 12px; font-size: 11px; border: 1px solid transparent; border-radius: 30px; }
+.plusone-study-choices button[aria-pressed="true"] { background: #30382c; color: #f7f7ee; }
+.plusone-study-choices button:hover { border-color: #30382c60; }
+.plusone-study-canvas { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; padding: 38px; min-height: 290px; background-image: radial-gradient(#292d221a 0.7px, transparent 0.7px); background-size: 18px 18px; }
+.plusone-study-story { animation: plusone-study-in 0.45s ease both; }
+.plusone-study-number { font: 400 14px/1 HWCigars, Georgia, serif; color: #7a6b4f; }
+.plusone-study-story h4 { font: 400 clamp(26px, 2.7vw, 40px)/1.06 HWCigars, Georgia, serif; letter-spacing: -0.035em; margin: 16px 0; }
+.plusone-study-story p { font-size: 12px; line-height: 1.65; margin: 0; max-width: 370px; }
+.plusone-study-steps { position: relative; list-style: none; margin: 0; padding: 0; }
+.plusone-study-steps::before { content: ""; position: absolute; top: 16px; bottom: 16px; left: 18px; width: 1px; background: #64715150; }
+.plusone-study-steps::after { content: ""; position: absolute; top: 16px; left: 15px; width: 7px; height: 7px; border-radius: 50%; background: #786e4b; animation: plusone-flow 4s ease-in-out infinite; }
+.plusone-study-steps li { position: relative; display: flex; align-items: center; gap: 16px; margin: 28px 0; font-size: 12px; line-height: 1.4; }
+.plusone-study-steps li > span { position: relative; z-index: 1; display: grid; place-items: center; width: 37px; height: 37px; flex-shrink: 0; border: 1px solid #64715150; border-radius: 50%; background: #e9e9dc; font: 400 12px/1 HWCigars, Georgia, serif; }
+.plusone-study-caption { margin: 0; padding: 14px 26px; border-top: 1px solid #292d2225; font-size: 10px; color: #686b5f; }
+.plusone-platform-study { display: grid; grid-template-columns: 1.2fr 1fr; gap: 36px; align-items: center; margin-top: 44px; border-top: 1px solid #292d2240; padding-top: 36px; }
+.plusone-platform-study figure { margin: 0; }
+.plusone-platform-study figcaption { margin-top: 12px; font-size: 10px; color: #686b5f; }
+.plusone-platform-study h4 { font: 400 34px/1.05 HWCigars, Georgia, serif; letter-spacing: -0.03em; margin: 0 0 18px; }
+.plusone-platform-study p { font-size: 13px; line-height: 1.65; }
+.plusone-platform-study .plusone-platform-note { font-size: 10px; color: #686b5f; }
+.plusone-footer { position: relative; background: #dcdcd0; color: #292d22; padding: 100px 5vw 24px 20vw; }
+.plusone-footer-title { margin: 20px 0 32px; font: 400 clamp(42px, 5.5vw, 80px)/1 HWCigars, Georgia, serif; letter-spacing: -0.04em; }
+.plusone-footer nav { display: flex; flex-wrap: wrap; gap: 20px 30px; margin-top: 64px; font-size: 13px; }
+.plusone-footer nav a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.plusone-footer-note { display: flex; flex-wrap: wrap; gap: 16px 28px; margin-top: 50px; border-top: 1px solid #292d2230; padding-top: 22px; font-size: 10px; }
+.plusone-footer-note > a { margin-left: auto; }
+@keyframes plusone-study-in { from { opacity: 0; translate: 0 6px; } to { opacity: 1; translate: 0; } }
+@keyframes plusone-flow { 0% { top: 16px; opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } 100% { top: calc(100% - 23px); opacity: 0; } }
+@media (max-width: 1080px) {
+  .plusone-desktop-nav { display: none; }
+  .plusone-header-cta { margin-left: auto; }
+  .plusone-menu-trigger { display: flex; flex-direction: column; justify-content: center; gap: 6px; width: 32px; height: 40px; padding: 4px; }
+  .plusone-menu-trigger > span { display: block; width: 24px; height: 1px; background: currentColor; }
+  .plusone-study-toolbar { align-items: flex-start; flex-direction: column; gap: 14px; }
+}
+@media (max-width: 939px) {
+  .plusone-chapter-content { width: 100%; }
+  .plusone-chapter-opening { padding: 16svh 26px 8svh; min-height: 115svh; }
+  .plusone-chapter-title { font-size: clamp(60px, 10vw, 100px); }
+  .plusone-chapter-intro { max-width: 600px; margin-top: 20svh; font-size: 32px; }
+  .plusone-chapter-paper { padding: 48px 26px; box-shadow: none; }
+  .plusone-offerings { gap: 22px; }
+  .plusone-study-canvas { gap: 26px; padding: 28px; }
+  .plusone-footer { padding: 72px 26px 24px; }
+}
+@media (max-width: 600px) {
+  .plusone-hero-title { font-size: 48px; }
+  .plusone-chapter-opening { padding-inline: 22px; min-height: 105svh; }
+  .plusone-chapter-title { font-size: clamp(46px, 11vw, 68px); }
+  .plusone-chapter-intro { font-size: 29px; }
+  .plusone-chapter-paper { padding: 40px 22px; }
+  .plusone-chapter-heading h3 { font-size: 34px; }
+  .plusone-chapter-heading > p:last-child { font-size: 13px; }
+  .plusone-offerings { grid-template-columns: 1fr; gap: 30px; }
+  .plusone-offerings h4 { font-size: 29px; }
+  .plusone-offerings ul { margin-top: 16px; }
+  .plusone-chapter-bottom { align-items: flex-start; flex-direction: column; gap: 26px; }
+  .plusone-study-toolbar { padding: 20px; }
+  .plusone-study-choices { gap: 4px; }
+  .plusone-study-choices button { padding: 8px 10px; font-size: 10px; }
+  .plusone-study-canvas { grid-template-columns: 1fr; padding: 24px; gap: 8px; }
+  .plusone-study-story h4 { font-size: 32px; }
+  .plusone-study-caption { padding-inline: 20px; font-size: 9px; line-height: 1.6; }
+  .plusone-platform-study { grid-template-columns: 1fr; }
+  .plusone-footer-note > a { margin-left: 0; }
+}
+@media (min-width: 940px) {
+  [data-scrolled="true"] .plusone-hero-title { font-size: 31px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .plusone-study-story, .plusone-study-steps::after { animation: none; }
+}
