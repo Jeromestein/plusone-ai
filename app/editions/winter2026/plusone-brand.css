@@ -14,20 +14,24 @@
 .plusone-brand {
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 8px;
   flex-shrink: 0;
 }
-.plusone-brand .plusone-mark { width: 34px; height: 34px; }
+.plusone-brand .plusone-mark { width: 30px; height: 30px; }
 .plusone-wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.17em;
   font: 400 29px/1 HWCigars, Georgia, serif;
   letter-spacing: -0.045em;
   white-space: nowrap;
 }
+/* Center the visible HWCigars letters within the icon, accounting for font metrics. */
+.plusone-brand .plusone-wordmark { translate: 0 0.085em; }
 .plusone-wordmark > span {
-  margin-left: 4px;
-  font: 500 10px/1 Inter, Arial, sans-serif;
+  flex: none;
+  font: 500 0.345em/1 Inter, Arial, sans-serif;
   letter-spacing: 0.06em;
-  vertical-align: middle;
 }
 .plusone-desktop-nav { display: flex; gap: 26px; margin-left: auto; }
 .plusone-desktop-nav a { padding: 10px 0; font-size: 13px; }
@@ -223,7 +227,8 @@
 }
 @media (max-width: 540px) {
   .plusone-header { padding-inline: 16px; }
-  .plusone-brand .plusone-mark { width: 31px; height: 31px; }
+  .plusone-brand { gap: 7px; }
+  .plusone-brand .plusone-mark { width: 27px; height: 27px; }
   .plusone-wordmark { font-size: 26px; }
   .plusone-header-cta { display: none; }
   .plusone-menu-trigger { margin-left: auto; }
