@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <style>svg{color:#262c23}@media(prefers-color-scheme:dark){svg{color:#f7f7ee}}</style>
+  <path d="M111.553 48.549 A50 50 0 1 1 79.451 16.447" fill="none" stroke="currentColor" stroke-width="8.6" stroke-linecap="round"/>
+  <circle cx="99.355" cy="28.645" r="8.5" fill="currentColor"/>
+  <path d="M69.7 30.3 Q72 28.6 72 31.8 L72 88.2 C72 96.7 74 99.2 80.5 100.2 Q82 100.4 82 102 L82 103 L47.5 103 L47.5 102 Q47.5 100.4 49 100.2 C56.1 99.2 58.5 96.7 58.5 88.2 L58.5 48.6 Q58.5 46.3 56.3 47.2 L47.2 50.5 Q44.9 51.4 44 49.8 Q43.3 48.4 45 47.2 Z" fill="currentColor"/>
+</svg>

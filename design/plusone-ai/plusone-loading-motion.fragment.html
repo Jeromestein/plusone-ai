@@ -1,0 +1,202 @@
+<div id="plusone-motion-preview" data-phase="idle">
+  <div class="po-heading">
+    <span>PlusOne AI</span>
+    <span class="text-small text-muted" data-status role="status" aria-live="polite">准备就绪</span>
+  </div>
+  <div class="po-stage" role="img" aria-label="PlusOne 标志加载动画：数字 1 固定，圆点与圆环缺口顺时针旋转，完成后回到右上角。">
+    <div data-mark class="po-main-mark"></div>
+  </div>
+  <div class="po-size-previews" aria-label="小尺寸预览">
+    <div class="po-size"><div data-mark style="width:16px;height:16px"></div><span class="text-small text-muted">16 px</span></div>
+    <div class="po-size"><div data-mark style="width:24px;height:24px"></div><span class="text-small text-muted">24 px</span></div>
+    <div class="po-size"><div data-mark style="width:32px;height:32px"></div><span class="text-small text-muted">32 px</span></div>
+    <div class="po-header-sample"><div data-mark style="width:32px;height:32px"></div><span>PlusOne AI</span></div>
+  </div>
+  <div class="viz-controls po-controls">
+    <button type="button" class="btn btn-primary" data-start>开始加载</button>
+    <button type="button" class="btn" data-complete disabled>加载完成</button>
+  </div>
+</div>
+<style>
+  #plusone-motion-preview { color:var(--foreground); padding:8px 0; }
+  #plusone-motion-preview .po-heading { display:flex; align-items:center; flex-wrap:wrap; gap:12px 24px; padding-right:92px; }
+  #plusone-motion-preview .po-stage { display:flex; align-items:center; justify-content:center; padding:26px 0 20px; }
+  #plusone-motion-preview .po-main-mark { width:180px; height:180px; }
+  #plusone-motion-preview .po-mark { display:block; width:100%; height:100%; overflow:visible; }
+  #plusone-motion-preview .po-size-previews { display:flex; justify-content:center; align-items:center; gap:22px; flex-wrap:wrap; }
+  #plusone-motion-preview .po-size { min-width:40px; display:flex; flex-direction:column; gap:9px; align-items:center; justify-content:flex-end; }
+  #plusone-motion-preview .po-size > div { display:flex; align-items:center; }
+  #plusone-motion-preview .po-header-sample { display:flex; align-items:center; gap:9px; margin-left:12px; }
+  #plusone-motion-preview .po-controls { justify-content:center; margin-top:24px; }
+  @media (max-width:400px) {
+    #plusone-motion-preview .po-main-mark { width:150px; height:150px; }
+    #plusone-motion-preview .po-size-previews { gap:16px; }
+    #plusone-motion-preview .po-header-sample { flex-basis:100%; justify-content:center; margin-left:0; margin-top:4px; }
+  }
+</style>
+<script>
+(() => {
+  const root = document.getElementById('plusone-motion-preview');
+  const status = root.querySelector('[data-status]');
+  const startButton = root.querySelector('[data-start]');
+  const completeButton = root.querySelector('[data-complete]');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const svg = '<svg class="po-mark" viewBox="0 0 128 128" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><g data-orbit><path d="M111.553 48.549 A50 50 0 1 1 79.451 16.447" fill="none" stroke="currentColor" stroke-width="8.6" stroke-linecap="round"/><circle cx="99.355" cy="28.645" r="8.5" fill="currentColor"/></g><path d="M69.7 30.3 Q72 28.6 72 31.8 L72 88.2 C72 96.7 74 99.2 80.5 100.2 Q82 100.4 82 102 L82 103 L47.5 103 L47.5 102 Q47.5 100.4 49 100.2 C56.1 99.2 58.5 96.7 58.5 88.2 L58.5 48.6 Q58.5 46.3 56.3 47.2 L47.2 50.5 Q44.9 51.4 44 49.8 Q43.3 48.4 45 47.2 Z" fill="currentColor"/></svg>';
+  root.querySelectorAll('[data-mark]').forEach((element) => { element.innerHTML = svg; });
+  const orbits = [...root.querySelectorAll('[data-orbit]')];
+  const speed = 0.24;
+  const accelerationTime = 180;
+  let phase = 'idle';
+  let angle = 0;
+  let velocity = 0;
+  let frame = 0;
+  let demonstrationTimer = 0;
+  let startTime = 0;
+  let startAngle = 0;
+  let settle = null;
+
+  function paint() {
+    const rotation = ((angle % 360) + 360) % 360;
+    orbits.forEach((orbit) => orbit.setAttribute('transform', 'rotate(' + rotation.toFixed(4) + ' 64 64)'));
+  }
+
+  function setPhase(next) {
+    phase = next;
+    root.dataset.phase = next;
+    status.textContent = next === 'loading'
+      ? (reducedMotion.matches ? '加载中 · 已减少动态效果' : '加载中')
+      : next === 'settling' ? '正在归位' : next === 'complete' ? '加载完成' : '准备就绪';
+    startButton.disabled = next === 'loading';
+    startButton.textContent = next === 'complete' ? '重新加载' : '开始加载';
+    completeButton.disabled = next !== 'loading';
+  }
+
+  function savePhase(value) {
+    const host = window.openai;
+    if (typeof host?.setWidgetState === 'function') {
+      Promise.resolve(host.setWidgetState({
+        modelContent: { logo: 'PlusOne AI / C', animation: 'clockwise orbit returning to upper-right', state: value },
+        privateContent: { phase: value }
+      })).catch(() => {});
+    }
+  }
+
+  function sample(time) {
+    if (phase === 'loading') {
+      const elapsed = Math.max(0, time - startTime);
+      const decay = Math.exp(-elapsed / accelerationTime);
+      angle = startAngle + speed * (elapsed - accelerationTime * (1 - decay));
+      velocity = speed * (1 - decay);
+    } else if (phase === 'settling' && settle) {
+      const t = Math.min(1, Math.max(0, (time - settle.time) / settle.duration));
+      const slope = settle.slope;
+      const progress = slope * t + (3 - 2 * slope) * t * t + (slope - 2) * t * t * t;
+      angle = settle.from + settle.distance * progress;
+      velocity = settle.distance / settle.duration * (slope + 2 * (3 - 2 * slope) * t + 3 * (slope - 2) * t * t);
+      if (t >= 1) {
+        angle = 0;
+        velocity = 0;
+        settle = null;
+        setPhase('complete');
+      }
+    }
+  }
+
+  function tick(time) {
+    frame = 0;
+    if (!root.isConnected) return;
+    sample(time);
+    paint();
+    if (phase === 'loading' || phase === 'settling') frame = requestAnimationFrame(tick);
+  }
+
+  function begin(remember = true) {
+    clearTimeout(demonstrationTimer);
+    const now = performance.now();
+    if (phase === 'loading' || phase === 'settling') sample(now);
+    cancelAnimationFrame(frame);
+    settle = null;
+    startAngle = angle;
+    startTime = now;
+    setPhase('loading');
+    if (reducedMotion.matches) {
+      angle = 0;
+      velocity = 0;
+      paint();
+    } else {
+      frame = requestAnimationFrame(tick);
+    }
+    if (remember) savePhase('loading');
+  }
+
+  function finish(remember = true) {
+    clearTimeout(demonstrationTimer);
+    if (phase !== 'loading') return;
+    if (reducedMotion.matches) {
+      angle = 0;
+      velocity = 0;
+      paint();
+      setPhase('complete');
+    } else {
+      const now = performance.now();
+      sample(now);
+      let distance = 360 - ((angle % 360) + 360) % 360;
+      if (angle < 0.1 && velocity < 0.01) {
+        cancelAnimationFrame(frame);
+        frame = 0;
+        angle = 0;
+        velocity = 0;
+        paint();
+        setPhase('complete');
+      } else {
+        if (distance < 55) distance += 360;
+        const duration = Math.max(480, Math.min(1500, distance / speed * 1.4));
+        settle = { from: angle, distance, time: now, duration, slope: Math.min(2.8, velocity * duration / distance) };
+        setPhase('settling');
+        if (!frame) frame = requestAnimationFrame(tick);
+      }
+    }
+    if (remember) savePhase('complete');
+  }
+
+  function restore(saved) {
+    const wanted = saved?.privateContent?.phase;
+    clearTimeout(demonstrationTimer);
+    cancelAnimationFrame(frame);
+    frame = 0;
+    angle = 0;
+    velocity = 0;
+    settle = null;
+    paint();
+    if (wanted === 'loading') begin(false);
+    else setPhase(wanted === 'complete' ? 'complete' : 'idle');
+  }
+
+  startButton.addEventListener('click', () => begin());
+  completeButton.addEventListener('click', () => finish());
+  reducedMotion.addEventListener('change', () => {
+    if (phase === 'loading') begin(false);
+    else if (phase === 'settling') {
+      cancelAnimationFrame(frame);
+      frame = 0;
+      angle = 0;
+      velocity = 0;
+      settle = null;
+      paint();
+      setPhase('complete');
+    }
+  });
+  window.addEventListener('openai:set_globals', (event) => {
+    const incoming = event.detail?.globals?.widgetState;
+    const wanted = incoming?.privateContent?.phase;
+    const localTarget = phase === 'settling' ? 'complete' : phase;
+    if (wanted && wanted !== localTarget) restore(incoming);
+  });
+  const saved = window.openai?.widgetState;
+  if (saved?.privateContent?.phase) restore(saved);
+  else {
+    begin(false);
+    demonstrationTimer = window.setTimeout(() => finish(false), 2800);
+  }
+})();
+</script>
