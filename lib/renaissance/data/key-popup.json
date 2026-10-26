@@ -1,0 +1,801 @@
+{
+  "window": {
+    "title": "Key",
+    "route": "/editions/winter2026/key",
+    "name": "ripple_popup",
+    "heightFactorOfMinMainViewport": 0.53,
+    "aspect": 1.3333333333333333,
+    "centerAtTriggerPointer": true,
+    "defaultCenterYOffset": -50,
+    "blackBackground": true,
+    "canvasOnly": true,
+    "buttons": [],
+    "keyboardShortcuts": [],
+    "keyboardFinding": "The popup bundle has no keydown or keyup listeners. No keyboard shortcuts are implemented.",
+    "modes": {
+      "key": {
+        "default": true,
+        "initializeObjects": true,
+        "cycleColor": true
+      },
+      "scan": {
+        "initializeObjects": true,
+        "fixedColor": [
+          1,
+          1,
+          0
+        ]
+      },
+      "other": {
+        "initializeObjects": false
+      }
+    },
+    "debugFlagPresentButUnused": true,
+    "spinner": {
+      "size": 32,
+      "borderWidth": 2,
+      "borderColor": "rgba(255,255,255,0.1)",
+      "topBorderColor": "#fff",
+      "rotationDurationMs": 800,
+      "fadeOutMs": 300
+    },
+    "connectedCanvasFadeInMs": 500,
+    "blurAutoCloseMs": 10000,
+    "hiddenAutoCloseMs": 9000
+  },
+  "scene": {
+    "camera": {
+      "fov": 50,
+      "near": 0.1,
+      "far": 100,
+      "position": [
+        0,
+        0,
+        5
+      ]
+    },
+    "renderer": {
+      "antialias": false,
+      "alpha": false,
+      "preserveDrawingBuffer": false,
+      "powerPreference": "high-performance",
+      "pixelRatioCap": 1.5,
+      "shadowMap": "BasicShadowMap"
+    },
+    "lights": {
+      "ambient": {
+        "color": 16777215,
+        "intensity": 0.5
+      },
+      "directional": {
+        "color": 16777215,
+        "intensity": 1.5,
+        "position": [
+          2,
+          3,
+          5
+        ],
+        "castShadow": true,
+        "shadowMapSize": [
+          512,
+          512
+        ],
+        "shadowCamera": {
+          "left": -10,
+          "right": 10,
+          "top": 10,
+          "bottom": -10,
+          "near": 0.1,
+          "far": 20
+        },
+        "shadowRadius": 2,
+        "shadowBias": -0.0001
+      }
+    },
+    "environment": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/empty_warehouse_01_1k.hdr",
+      "localUrl": "/mirror/dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/empty_warehouse_01_1k.hdr",
+      "localFileExists": false
+    },
+    "environmentProcessing": "RGBELoader, EquirectangularReflectionMapping, PMREMGenerator.fromEquirectangular",
+    "bloom": {
+      "strength": 0.3,
+      "radius": 0.4,
+      "threshold": 0.95
+    }
+  },
+  "modelsBySection": {
+    "hero": {
+      "url": "https://cdn.shopify.com/3d/models/36e8a29ba988d681/skateboard.glb",
+      "localUrl": "/mirror/cdn.shopify.com/3d/models/36e8a29ba988d681/skateboard.glb",
+      "localFileExists": true,
+      "scale": 1.25,
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "centerByBoundingBoxAfterApplyingScale": true,
+      "playAllAnimationClips": true,
+      "material": {
+        "color": 12556114,
+        "colorHex": "#bf9752",
+        "metalness": 1,
+        "roughness": 0.2,
+        "envMapIntensity": 2,
+        "castShadow": true,
+        "receiveShadow": true
+      },
+      "shader": "hero",
+      "appliedOpacityViaGroupScale": true
+    },
+    "sidekick": {
+      "url": "https://cdn.shopify.com/3d/models/f86781203559fb75/compass.glb",
+      "localUrl": "/mirror/cdn.shopify.com/3d/models/f86781203559fb75/compass.glb",
+      "localFileExists": true,
+      "scale": 0.7,
+      "rotation": [
+        0,
+        -0.7853981633974483,
+        0
+      ],
+      "centerByBoundingBoxAfterApplyingScale": true,
+      "playAllAnimationClips": true,
+      "material": {
+        "color": 12556114,
+        "colorHex": "#bf9752",
+        "metalness": 1,
+        "roughness": 0.2,
+        "envMapIntensity": 2,
+        "castShadow": true,
+        "receiveShadow": true
+      },
+      "shader": "sidekick",
+      "appliedOpacityViaGroupScale": true
+    },
+    "online": {
+      "url": "https://cdn.shopify.com/3d/models/61f52f4665c99667/scroll.glb",
+      "localUrl": "/mirror/cdn.shopify.com/3d/models/61f52f4665c99667/scroll.glb",
+      "localFileExists": true,
+      "scale": 1.2,
+      "rotation": [
+        -3.141592653589793,
+        0,
+        0.3141592653589793
+      ],
+      "centerByBoundingBoxAfterApplyingScale": true,
+      "playAllAnimationClips": true,
+      "material": {
+        "color": 12556114,
+        "colorHex": "#bf9752",
+        "metalness": 1,
+        "roughness": 0.2,
+        "envMapIntensity": 2,
+        "castShadow": true,
+        "receiveShadow": true
+      },
+      "shader": "online",
+      "appliedOpacityViaGroupScale": true
+    },
+    "retail": {
+      "url": "https://cdn.shopify.com/3d/models/1e2f8fa97fab4cb9/pos.glb",
+      "localUrl": "/mirror/cdn.shopify.com/3d/models/1e2f8fa97fab4cb9/pos.glb",
+      "localFileExists": true,
+      "scale": 5,
+      "rotation": [
+        0.7853981633974483,
+        -2.356194490192345,
+        -3.141592653589793
+      ],
+      "centerByBoundingBoxAfterApplyingScale": true,
+      "playAllAnimationClips": true,
+      "material": {
+        "color": 12556114,
+        "colorHex": "#bf9752",
+        "metalness": 1,
+        "roughness": 0.2,
+        "envMapIntensity": 2,
+        "castShadow": true,
+        "receiveShadow": true
+      },
+      "shader": "retail",
+      "appliedOpacityViaGroupScale": true
+    },
+    "marketing": {
+      "url": "https://cdn.shopify.com/3d/models/cfe26b51e737b6ca/lute.glb",
+      "localUrl": "/mirror/cdn.shopify.com/3d/models/cfe26b51e737b6ca/lute.glb",
+      "localFileExists": true,
+      "scale": 1.2,
+      "rotation": [
+        -3.141592653589793,
+        -3.141592653589793,
+        -3.141592653589793
+      ],
+      "centerByBoundingBoxAfterApplyingScale": true,
+      "playAllAnimationClips": true,
+      "material": {
+        "color": 12556114,
+        "colorHex": "#bf9752",
+        "metalness": 1,
+        "roughness": 0.2,
+        "envMapIntensity": 2,
+        "castShadow": true,
+        "receiveShadow": true
+      },
+      "shader": "marketing",
+      "appliedOpacityViaGroupScale": true
+    },
+    "checkout": {
+      "url": "https://cdn.shopify.com/3d/models/84be1a30dca626b2/cardreader.glb",
+      "localUrl": "/mirror/cdn.shopify.com/3d/models/84be1a30dca626b2/cardreader.glb",
+      "localFileExists": true,
+      "scale": 10,
+      "rotation": [
+        0.7853981633974483,
+        -1.5707963267948966,
+        0
+      ],
+      "centerByBoundingBoxAfterApplyingScale": true,
+      "playAllAnimationClips": true,
+      "material": {
+        "color": 12556114,
+        "colorHex": "#bf9752",
+        "metalness": 1,
+        "roughness": 0.2,
+        "envMapIntensity": 2,
+        "castShadow": true,
+        "receiveShadow": true
+      },
+      "shader": "checkout",
+      "appliedOpacityViaGroupScale": true
+    },
+    "operations": {
+      "url": "https://cdn.shopify.com/3d/models/f86781203559fb75/compass.glb",
+      "localUrl": "/mirror/cdn.shopify.com/3d/models/f86781203559fb75/compass.glb",
+      "localFileExists": true,
+      "scale": 0.7,
+      "rotation": [
+        0,
+        -0.7853981633974483,
+        0
+      ],
+      "centerByBoundingBoxAfterApplyingScale": true,
+      "playAllAnimationClips": true,
+      "material": {
+        "color": 12556114,
+        "colorHex": "#bf9752",
+        "metalness": 1,
+        "roughness": 0.2,
+        "envMapIntensity": 2,
+        "castShadow": true,
+        "receiveShadow": true
+      },
+      "shader": "operations",
+      "appliedOpacityViaGroupScale": true
+    },
+    "shop-app": {
+      "url": "https://cdn.shopify.com/3d/models/38560a8bef72369d/duck.glb",
+      "localUrl": "/mirror/cdn.shopify.com/3d/models/38560a8bef72369d/duck.glb",
+      "localFileExists": true,
+      "scale": 14,
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ],
+      "centerByBoundingBoxAfterApplyingScale": true,
+      "playAllAnimationClips": true,
+      "material": {
+        "color": 12556114,
+        "colorHex": "#bf9752",
+        "metalness": 1,
+        "roughness": 0.2,
+        "envMapIntensity": 2,
+        "castShadow": true,
+        "receiveShadow": true
+      },
+      "shader": "shop-app",
+      "appliedOpacityViaGroupScale": true
+    },
+    "b2b": {
+      "url": "https://cdn.shopify.com/3d/models/51877df313278339/iphone.glb",
+      "localUrl": "/mirror/cdn.shopify.com/3d/models/51877df313278339/iphone.glb",
+      "localFileExists": true,
+      "scale": 14,
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "centerByBoundingBoxAfterApplyingScale": true,
+      "playAllAnimationClips": true,
+      "material": {
+        "color": 12556114,
+        "colorHex": "#bf9752",
+        "metalness": 1,
+        "roughness": 0.2,
+        "envMapIntensity": 2,
+        "castShadow": true,
+        "receiveShadow": true
+      },
+      "shader": "b2b",
+      "appliedOpacityViaGroupScale": true
+    },
+    "finance": {
+      "url": "https://cdn.shopify.com/3d/models/36e8a29ba988d681/skateboard.glb",
+      "localUrl": "/mirror/cdn.shopify.com/3d/models/36e8a29ba988d681/skateboard.glb",
+      "localFileExists": true,
+      "scale": 1.25,
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ],
+      "centerByBoundingBoxAfterApplyingScale": true,
+      "playAllAnimationClips": true,
+      "material": {
+        "color": 12556114,
+        "colorHex": "#bf9752",
+        "metalness": 1,
+        "roughness": 0.2,
+        "envMapIntensity": 2,
+        "castShadow": true,
+        "receiveShadow": true
+      },
+      "shader": "finance",
+      "appliedOpacityViaGroupScale": true
+    },
+    "shipping": {
+      "url": "https://cdn.shopify.com/3d/models/3bd5f17a64ce2d1b/key.glb",
+      "localUrl": "/mirror/cdn.shopify.com/3d/models/3bd5f17a64ce2d1b/key.glb",
+      "localFileExists": true,
+      "scale": 2.6,
+      "rotation": [
+        -0.7853981633974483,
+        -1.5707963267948966,
+        0
+      ],
+      "centerByBoundingBoxAfterApplyingScale": true,
+      "playAllAnimationClips": true,
+      "material": {
+        "color": 12556114,
+        "colorHex": "#bf9752",
+        "metalness": 1,
+        "roughness": 0.2,
+        "envMapIntensity": 2,
+        "castShadow": true,
+        "receiveShadow": true
+      },
+      "shader": "shipping",
+      "appliedOpacityViaGroupScale": true
+    },
+    "developer": {
+      "url": "https://cdn.shopify.com/3d/models/8b59d67bd183e963/ring.glb",
+      "localUrl": "/mirror/cdn.shopify.com/3d/models/8b59d67bd183e963/ring.glb",
+      "localFileExists": true,
+      "scale": 1.2,
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ],
+      "centerByBoundingBoxAfterApplyingScale": true,
+      "playAllAnimationClips": true,
+      "material": {
+        "color": 12556114,
+        "colorHex": "#bf9752",
+        "metalness": 1,
+        "roughness": 0.2,
+        "envMapIntensity": 2,
+        "castShadow": true,
+        "receiveShadow": true
+      },
+      "shader": "developer",
+      "appliedOpacityViaGroupScale": true
+    }
+  },
+  "modelInteraction": {
+    "initialState": "picked-up",
+    "initialPosition": [
+      0,
+      0,
+      -2.5
+    ],
+    "pickedUpTarget": [
+      0,
+      0,
+      0
+    ],
+    "droppedZ": -2.5,
+    "clickHitbox": {
+      "shape": "sphere",
+      "radius": 2,
+      "widthSegments": 8,
+      "heightSegments": 8
+    },
+    "click": "Spin by pi, toggle picked-up/dropped, cycle neon color, broadcast ripple.",
+    "clickedSpinIncrement": 3.141592653589793,
+    "clickedSpinLerpPerFrame": 0.025,
+    "baseSpinRadiansPerSecond": [
+      0.168,
+      0.12,
+      0.24
+    ],
+    "scaleInMs": 800,
+    "scaleOutMs": 500,
+    "scaleEase": "back",
+    "scaleOvershoot": 1.7,
+    "opacityLerpPerFrame": 0.1,
+    "pickedUpPositionLerpPerFrame": 0.05,
+    "droppedPositionLerpTarget": 1,
+    "positionLerpTransitionPerFrame": 0.03,
+    "depthLerpPerFrame": 0.1,
+    "velocityRotateFactor": 0.007,
+    "velocityRotateLerpPerFrame": 0.1,
+    "pickedUpStateLerpPerFrame": 0.08,
+    "scrollRotation": {
+      "velocitySmoothLerp": 0.1,
+      "clampVelocity": [
+        -50,
+        50
+      ],
+      "accumulateFactor": 0.002,
+      "rotationLerp": 0.1
+    },
+    "spawnOffsets": {
+      "cachePerSection": true,
+      "xRangeAsPlaneWidth": [
+        -0.4,
+        0.4
+      ],
+      "yRangeAsPlaneHeight": [
+        -0.4,
+        0.4
+      ]
+    },
+    "discard": {
+      "visibilityLerpPerFrame": 0.05,
+      "hideBelow": 0.01,
+      "envIntensityLerpPerFrame": 0.1,
+      "disableSpin": true
+    }
+  },
+  "keyhole": {
+    "url": "https://cdn.shopify.com/3d/models/bbb20d86d2f935bb/keyhole.glb",
+    "localUrl": "/mirror/cdn.shopify.com/3d/models/bbb20d86d2f935bb/keyhole.glb",
+    "localFileExists": true,
+    "renderedOnlyInPopup": true,
+    "shownSection": "shipping",
+    "groupPosition": [
+      0,
+      0,
+      -2.5
+    ],
+    "groupXYFollowsAlignedMainCanvasCenter": true,
+    "modelScale": 1.4,
+    "modelPositionAfterScaledBoundingBoxCenter": [
+      -0.8,
+      0,
+      -2
+    ],
+    "material": {
+      "color": 12556114,
+      "metalness": 1,
+      "roughness": 0.2,
+      "envMapIntensity": 1,
+      "highlightEnvMapIntensity": 10,
+      "envMapIntensityLerpPerFrame": 0.15
+    },
+    "showMs": 600,
+    "hideMs": 400,
+    "ease": "back",
+    "overshoot": 1.7,
+    "insertionDistanceInGroupXY": 2,
+    "onlyInsertWhenDropped": true,
+    "moveKeyTo": {
+      "offsetFromKeyholePosition": [
+        0,
+        0.15,
+        0.1
+      ],
+      "keyTargetRotationX": -1.0995574287564276,
+      "finalSpinGroupRotationX": 2.0420352248333655
+    },
+    "afterInsert": {
+      "emitKeyInsertCompleteImmediately": true,
+      "discardBothObjects": true,
+      "switchToBlacklightAfterMs": 2000,
+      "mainCoinBurstDelayMs": 500
+    }
+  },
+  "coins": {
+    "url": "https://cdn.shopify.com/3d/models/362039553a5d18aa/coin-reduced.glb",
+    "localUrl": "/mirror/cdn.shopify.com/3d/models/362039553a5d18aa/coin-reduced.glb",
+    "localFileExists": true,
+    "renderedIn": "main shipping scene",
+    "count": 150,
+    "useFirstMeshGeometry": true,
+    "group": {
+      "position": [
+        -0.2,
+        0.5,
+        0
+      ],
+      "scale": 1
+    },
+    "material": {
+      "color": 12556114,
+      "colorHex": "#bf9752",
+      "metalness": 1,
+      "roughness": 0.2,
+      "envMapIntensity": 6
+    },
+    "gravity": 0.6,
+    "spread": 0.2,
+    "initialVelocity": 1.2,
+    "coinScale": 0.075,
+    "startDelaySecondsRange": [
+      0,
+      0.5
+    ],
+    "position": {
+      "shape": "horizontal disk",
+      "radiusRange": [
+        0,
+        0.2
+      ],
+      "angleRange": [
+        0,
+        6.283185307179586
+      ],
+      "y": 0
+    },
+    "velocity": {
+      "xRange": [
+        -0.5,
+        0.5
+      ],
+      "yRange": [
+        1.2,
+        2.2
+      ],
+      "zRange": [
+        -0.5,
+        0.5
+      ]
+    },
+    "rotationRangeAllAxes": [
+      0,
+      6.283185307179586
+    ],
+    "rotationSpeed": {
+      "xRange": [
+        -2,
+        2
+      ],
+      "yRange": [
+        -2,
+        2
+      ],
+      "zRange": [
+        -1,
+        1
+      ]
+    },
+    "scaleMultiplierRange": [
+      0.8,
+      1.2
+    ],
+    "deactivateWhenYBelow": -3,
+    "burstDelayMs": 500,
+    "physics": "velocity.y -= gravity * delta; position += velocity * delta; rotation += rotationSpeed * delta"
+  },
+  "shaderSourceByName": {
+    "default": "\n  uniform sampler2D uTexture;\n  varying vec2 vUv;\n  void main() {\n    vec4 tex = texture2D(uTexture, vUv);\n    gl_FragColor = vec4(pow(tex.rgb, vec3(2.5)), tex.a);\n  }\n",
+    "blacklight": "\n  uniform sampler2D uTexture;\n  uniform float uTime;\n  uniform vec2 uResolution;\n  varying vec2 vUv;\n  \n  void main() {\n    vec4 tex = texture2D(uTexture, vUv);\n    \n    // Extract luminance\n    float luma = dot(tex.rgb, vec3(0.299, 0.587, 0.114));\n    \n    // Blacklight color palette - purple/blue glow\n    vec3 uvColor = vec3(0.4, 0.1, 0.8);\n    vec3 glowColor = vec3(0.8, 0.3, 1.0);\n    \n    // Bright areas get the glow, dark areas stay dark\n    float glow = smoothstep(0.3, 0.7, luma);\n    \n    // Mix between deep purple and bright glow\n    vec3 color = mix(tex.rgb * uvColor * 0.3, tex.rgb * glowColor, glow);\n    \n    // Add subtle pulse\n    float pulse = sin(uTime * 2.0) * 0.05 + 1.0;\n    color *= pulse;\n\n    color.g *= 0.1;\n    color.r *= 0.25;\n    color.b *= 1.2;\n    \n    // Boost contrast\n    color = pow(color+0.02, vec3(1.8)) * mix(2.0, 0.2, smoothstep(0.0, 0.8, length(vUv-0.5)));\n    \n\n    float lumaV = dot(tex.rgb, vec3(0.299, 0.587, 0.114));\n    float edgesV = fwidth(lumaV) * 10.0;\n    vec3 edges = vec3(pow(edgesV, 1.2));\n\n    color += edges * 0.5 * vec3(0.0, 0.2, 1.0);\n    color *= vec3(1.0) + edges * 1.5;\n\n    gl_FragColor = vec4(color, 1.0);\n  }\n",
+    "hero": "\n  uniform sampler2D uTexture;\n  uniform float uTime;\n  uniform vec2 uResolution;\n  uniform float uScanActive;\n  varying vec2 vUv;\n  \n  void main() {\n    vec2 uv = vUv;\n    \n    // Sample texture at full resolution\n    vec4 texColor = texture2D(uTexture, uv);\n    \n    // Pixelate to grid\n    vec2 pixelSize = 20.0 / uResolution;\n    vec2 gridUv = floor(uv / pixelSize) * pixelSize;\n    \n    // Sample texture and compute luminance\n    vec4 gridColor = texture2D(uTexture, gridUv);\n    float luma = dot(gridColor.rgb, vec3(0.299, 0.587, 0.114));\n    \n    // 4x4 Bayer dither matrix\n    mat4 bayer = mat4(\n      0.0, 8.0, 2.0, 10.0,\n      12.0, 4.0, 14.0, 6.0,\n      3.0, 11.0, 1.0, 9.0,\n      15.0, 7.0, 13.0, 5.0\n    );\n    \n    // Get position in dither pattern\n    vec2 pc = mod(floor(uv * uResolution), 4.0);\n    float threshold = bayer[int(pc.x)][int(pc.y)] / 25.0;\n    \n    // Apply dither\n    float dither = step(threshold, luma);\n    \n    // Dark output with slight gamma curve\n    vec3 color = pow(vec3(dither-0.1), vec3(5.0));\n    \n    gl_FragColor = vec4(color * pow(texColor.rgb, vec3(1.5)), 1.0);\n  }\n",
+    "sidekick": "\n  uniform sampler2D uTexture;\n  varying vec2 vUv;\n  void main() {\n    vec4 tex = texture2D(uTexture, vUv);\n    gl_FragColor = vec4(pow(tex.rgb, vec3(2.5)), tex.a);\n  }\n",
+    "online": "\n  uniform sampler2D uTexture;\n  varying vec2 vUv;\n  void main() {\n    vec4 tex = texture2D(uTexture, vUv);\n    gl_FragColor = vec4(pow(tex.rgb, vec3(2.5)), tex.a);\n  }\n",
+    "retail": "\n  uniform sampler2D uTexture;\n  varying vec2 vUv;\n  void main() {\n    vec4 tex = texture2D(uTexture, vUv);\n    gl_FragColor = vec4(pow(tex.rgb, vec3(2.5)), tex.a);\n  }\n",
+    "marketing": "\n  uniform sampler2D uTexture;\n  uniform sampler2D uMudNormal;\n  uniform float uTime;\n  uniform vec2 uResolution;\n  varying vec2 vUv;\n\n  const float PI = 3.1415926535897932;\n\n  // Speed settings\n  const float speed = 0.04;\n  const float speed_x = 0.06;\n  const float speed_y = 0.06;\n\n  // Refraction settings\n  const float emboss = 0.80;\n  const float intensity = 1.5;\n  const int steps = 8;\n  const float frequency = 8.0;\n  const int angle = 7;\n\n  // Reflection settings\n  const float delta = 60.0;\n  const float gain = 700.0;\n  const float reflectionCutOff = 0.012;\n  const float reflectionIntensity = 200000.0;\n\n  float col(vec2 coord, float time) {\n    float delta_theta = 2.0 * PI / float(angle);\n    float c = 0.0;\n    float theta = 0.0;\n    for (int i = 0; i < steps; i++) {\n      vec2 adjc = coord;\n      theta = delta_theta * float(i);\n      adjc.x += cos(theta) * time * speed + time * speed_x;\n      adjc.y -= sin(theta) * time * speed - time * speed_y;\n      c = c + cos((adjc.x * cos(theta) - adjc.y * sin(theta)) * frequency) * intensity;\n    }\n    return cos(c);\n  }\n\n  void main() {\n    float time = uTime * 1.3;\n    \n    // Apply mud texture distortion to base UV\n    vec3 mud = texture2D(uMudNormal, vUv * 2.0 + time * 0.02).rgb;\n    vec2 mudOffset = (mud.rg - 0.5) * 0.08;\n    \n    vec2 p = vUv + mudOffset;\n    vec2 c1 = p;\n    vec2 c2 = p;\n    \n    float cc1 = col(c1, time);\n    \n    c2.x += 1.0 / delta;\n    float dx = emboss * (cc1 - col(c2, time)) / delta;\n    \n    c2.x = p.x;\n    c2.y += 1.0 / delta;\n    float dy = emboss * (cc1 - col(c2, time)) / delta;\n    \n    c1.x += dx * 2.0;\n    c1.y = 1.0 - (c1.y + dy * 2.0);\n    \n    float alpha = 1.0 + dot(dx, dy) * gain;\n    \n    float ddx = dx - reflectionCutOff;\n    float ddy = dy - reflectionCutOff;\n    if (ddx > 0.0 && ddy > 0.0) {\n      alpha = pow(alpha, ddx * ddy * reflectionIntensity);\n    }\n    \n    vec4 texColor = texture2D(uTexture, c1) * alpha;\n\n    texColor.rgb = pow(texColor.rgb, vec3(1.8));\n    gl_FragColor = texColor;\n  }\n",
+    "shop-app": "\n  uniform sampler2D uTexture;\n  uniform float uTime;\n  uniform vec2 uResolution;\n  uniform float uScanActive;\n  varying vec2 vUv;\n  \n  void main() {\n    vec2 uv = vUv;\n    \n    // Sample texture at full resolution\n    vec4 texColor = texture2D(uTexture, uv);\n    \n    // Pixelate to grid\n    vec2 pixelSize = 3.0 / uResolution;\n    vec2 gridUv = floor(uv / pixelSize) * pixelSize;\n    \n    // Sample texture and compute luminance\n    vec4 gridColor = texture2D(uTexture, gridUv);\n    float luma = dot(gridColor.rgb, vec3(0.299, 0.587, 0.114));\n    \n    // 4x4 Bayer dither matrix\n    mat4 bayer = mat4(\n      0.0, 8.0, 2.0, 10.0,\n      12.0, 4.0, 14.0, 6.0,\n      3.0, 11.0, 1.0, 9.0,\n      15.0, 7.0, 13.0, 5.0\n    );\n    \n    // Get position in dither pattern\n    vec2 pc = mod(floor(uv * uResolution), 4.0);\n    float threshold = bayer[int(pc.x)][int(pc.y)] / 20.0;\n    \n    // Apply dither\n    float dither = step(threshold, luma);\n    \n    // Dark output with slight gamma curve\n    vec3 color = pow(0.1 + vec3(1.0-dither) * 0.8, vec3(3.0));\n    \n    // DEBUG: Show red tint when uScanActive should be active but isn't triggering\n    // color = mix(color, vec3(1.0, 0.0, 0.0), uScanActive * 0.5);\n    \n    gl_FragColor = vec4(color, 1.0);\n  }\n",
+    "checkout": "\n  uniform sampler2D uTexture;\n  varying vec2 vUv;\n  void main() {\n    vec4 tex = texture2D(uTexture, vUv);\n    gl_FragColor = vec4(pow(tex.rgb, vec3(2.5)), tex.a);\n  }\n",
+    "operations": "\n  uniform sampler2D uTexture;\n  varying vec2 vUv;\n  void main() {\n    vec4 tex = texture2D(uTexture, vUv);\n    gl_FragColor = vec4(pow(tex.rgb, vec3(2.5)), tex.a);\n  }\n",
+    "b2b": "\n  uniform sampler2D uTexture;\n  varying vec2 vUv;\n  void main() {\n    vec4 tex = texture2D(uTexture, vUv);\n    gl_FragColor = vec4(pow(tex.rgb, vec3(2.5)), tex.a);\n  }\n",
+    "finance": "\n  uniform sampler2D uTexture;\n  varying vec2 vUv;\n  void main() {\n\n    vec4 texColor = texture2D(uTexture, vUv);\n    gl_FragColor = vec4(pow(texColor.rgb, vec3(2.0)), texColor.a);\n  }\n",
+    "shipping": "\n  uniform sampler2D uTexture;\n  varying vec2 vUv;\n  void main() {\n\n    vec4 texColor = texture2D(uTexture, vUv);\n    gl_FragColor = vec4(pow(texColor.rgb, vec3(2.0)), texColor.a);\n  }\n",
+    "developer": "\n  uniform sampler2D uTexture;\n  uniform float uTime;\n  uniform vec2 uResolution;\n  uniform float uScanActive;\n  varying vec2 vUv;\n  \n  void main() {\n    vec2 uv = vUv;\n    \n    // Sample texture at full resolution\n    vec4 texColor = texture2D(uTexture, uv);\n    \n    // Pixelate to grid\n    vec2 pixelSize = 3.0 / uResolution;\n    vec2 gridUv = floor(uv / pixelSize) * pixelSize;\n    \n    // Sample texture and compute luminance\n    vec4 gridColor = texture2D(uTexture, gridUv);\n    float luma = dot(gridColor.rgb, vec3(0.299, 0.587, 0.114));\n    \n    // 4x4 Bayer dither matrix\n    mat4 bayer = mat4(\n      0.0, 8.0, 2.0, 10.0,\n      12.0, 4.0, 14.0, 6.0,\n      3.0, 11.0, 1.0, 9.0,\n      15.0, 7.0, 13.0, 5.0\n    );\n    \n    // Get position in dither pattern\n    vec2 pc = mod(floor(uv * uResolution), 4.0);\n    float threshold = bayer[int(pc.x)][int(pc.y)] / 20.0;\n    \n    // Apply dither\n    float dither = step(threshold, luma);\n    \n    // Dark output with slight gamma curve\n    vec3 color = pow(0.25 + vec3(1.0 - dither) * 0.7, vec3(3.0));\n    \n    // DEBUG: Show red tint when uScanActive should be active but isn't triggering\n    // color = mix(color, vec3(1.0, 0.0, 0.0), uScanActive * 0.5);\n    \n    gl_FragColor = vec4(color, 1.0);\n  }\n"
+  },
+  "shaderVertexSource": "\n  varying vec2 vUv;\n  void main() {\n    vUv = uv;\n    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n  }\n",
+  "shaderUniformDefaults": {
+    "uTexture": "live main canvas VideoTexture",
+    "uTime": 0,
+    "uResolution": "popup innerWidth, innerHeight",
+    "uScanActive": 0,
+    "uVelocity": [
+      0,
+      0
+    ],
+    "uPosition": [
+      0,
+      0
+    ]
+  },
+  "videoPlane": {
+    "geometry": {
+      "type": "BoxGeometry",
+      "size": [
+        1,
+        1,
+        0.1
+      ]
+    },
+    "positionZFormula": "-5 - planeWidth * 0.1",
+    "scaleFormula": [
+      "planeWidth",
+      "planeHeight",
+      "planeWidth * 2"
+    ],
+    "shadowPlane": {
+      "geometry": [
+        1,
+        1
+      ],
+      "z": -4,
+      "opacity": 0.8
+    },
+    "velocityUniformLerpPerFrame": 0.1,
+    "positionUniformLerpPerFrame": 0.1,
+    "mudTexture": {
+      "url": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/mud_normal.webp?v=1762463320",
+      "localUrl": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/mud_normal.webp?v=1762463320",
+      "localFileExists": true
+    }
+  },
+  "alignment": {
+    "planeZ": -5,
+    "lerpPerFrame": 0.25,
+    "tweak": [
+      0,
+      -0.5
+    ],
+    "formula": {
+      "canvasCenterX": "main.screenX + canvasRect.x + canvasRect.w / 2",
+      "canvasCenterY": "main.screenY + canvasRect.y + canvasRect.h / 2",
+      "popupCenterX": "popup.screenX + popup.innerWidth / 2",
+      "popupCenterY": "popup.screenY + popup.innerHeight / 2",
+      "visibleHeight": "2 * tan(cameraFov * pi / 360) * abs(cameraZ - planeZ)",
+      "visibleWidth": "visibleHeight * popup.innerWidth / popup.innerHeight",
+      "targetX": "(canvasCenterX - popupCenterX) / popup.innerWidth * visibleWidth",
+      "targetY": "-(canvasCenterY - popupCenterY) / popup.innerHeight * visibleHeight - 0.5",
+      "planeWidth": "visibleWidth * canvasRect.w / popup.innerWidth",
+      "planeHeight": "visibleHeight * canvasRect.h / popup.innerHeight"
+    }
+  },
+  "graffiti": {
+    "texture": {
+      "url": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/Graffiti-Canvas_251215.ktx2?v=1765908798",
+      "localUrl": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Graffiti-Canvas_251215.ktx2?v=1765908798",
+      "localFileExists": true
+    },
+    "mudTexture": {
+      "url": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/mud_normal.webp?v=1762463320",
+      "localUrl": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/mud_normal.webp?v=1762463320",
+      "localFileExists": true
+    },
+    "textureColorSpace": "SRGBColorSpace",
+    "textureWrapping": "RepeatWrapping",
+    "textureFilter": "LinearFilter",
+    "z": -4.9,
+    "blend": "AdditiveBlending",
+    "depthTest": true,
+    "depthWrite": false,
+    "visibilityTarget": "picked-up ? 0 : 1",
+    "fadeInLerpPerFrame": 0.05,
+    "fadeOutLerpPerFrame": 0.08,
+    "scrollOffsetTarget": "totalProgress * 2",
+    "scrollOffsetLerpPerFrame": 0.1,
+    "transitionFormula": "visibility * (1 - visibility) * 4",
+    "fragmentShader": "\n        uniform sampler2D uTexture;\n        uniform sampler2D uMudNormal;\n        uniform float uTime;\n        uniform float uVisibility;\n        uniform float uTransition;\n        uniform float uScrollOffset;\n        uniform float uPlaneAspect;\n        varying vec2 vUv;\n        \n        float hash(float n) {\n          return fract(sin(n) * 43758.5453);\n        }\n        \n        void main() {\n          // Scale UVs for 1:2 texture aspect ratio and plane aspect ratio\n          // Texture is 1:2 (aspect 0.5), adjust X based on plane aspect\n          float textureAspect = 1.0;\n          vec2 scaledUv = vec2(vUv.x, vUv.y * 0.25 * (textureAspect / uPlaneAspect));\n          \n          // Scroll UVs vertically based on scroll position (wraps due to RepeatWrapping)\n          // Flip X for correct orientation\n          vec2 scrolledUv = vec2(scaledUv.x, (1.0-scaledUv.y) + uScrollOffset * 1.5 - 0.05);\n          \n          // Sample mud normal for UV distortion\n          vec2 mudUv = vUv * 1.5 + uTime * 0.01;\n          vec3 mudNormal = texture2D(uMudNormal, mudUv).rgb * 2.0 - 1.0;\n          \n          // Distort UVs based on transition amount\n          float distortAmount = uTransition * 0.05;\n          vec2 distortedUv = scrolledUv + mudNormal.xy * distortAmount;\n          \n          vec4 texColor = texture2D(uTexture, distortedUv);\n          texColor.rgb = pow(texColor.rgb * 1.2, vec3(1.5));\n          \n          // Flicker during transitions\n          float flickerStrength = uTransition * 0.5;\n          float noise1 = hash(floor(uTime * 15.0) + vUv.x * 10.0);\n          float noise2 = hash(floor(uTime * 23.0) + vUv.y * 7.0);\n          float noise3 = hash(floor(uTime * 31.0));\n          float flicker = 1.0 - flickerStrength * (noise1 * 0.4 + noise2 * 0.3 + noise3 * 0.3);\n          \n          float alpha = uVisibility * flicker;\n\n          vec3 color = texColor.rgb * alpha;\n          color *= 2.0 + sin(uTime * 3.0 + vUv.y * 6.0) * 0.25;\n          \n          gl_FragColor = vec4(color, 1.0);\n        }\n      "
+  },
+  "shoppy": {
+    "model": {
+      "url": "https://cdn.shopify.com/3d/models/fb1243edb2f07660/DancingRenaissanceShoppyv5_compressed.glb",
+      "localUrl": "/mirror/cdn.shopify.com/3d/models/fb1243edb2f07660/DancingRenaissanceShoppyv5_compressed.glb",
+      "localFileExists": true
+    },
+    "position": [
+      0,
+      2,
+      -6
+    ],
+    "scale": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "animationIndex": 0,
+    "alignedPositionFormula": [
+      "alignedX",
+      "alignedY + planeHeight * 0.5",
+      -6
+    ]
+  },
+  "boids": {
+    "maxCount": 12,
+    "initialCount": 1,
+    "addOneForEachFirstPickedUpSectionVisit": true,
+    "initialVisitAlsoAddsOne": true,
+    "baseOrbitRadius": 1.5,
+    "movingOrbitShrinkFactor": 0.7,
+    "baseTrailPoints": 15,
+    "baseChainLerp": 0.28,
+    "ribbonWidth": 0.06,
+    "colorsPickedUp": "gold",
+    "colorsDropped": "neon",
+    "vertexShader": "\nvarying vec2 vUv;\n\nvoid main() {\n  vUv = uv;\n  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n}\n",
+    "fragmentShader": "\nprecision highp float;\nuniform vec3 uColor;\nvarying vec2 vUv;\n\nvoid main() {\n  float t = vUv.y;\n  float endFade = smoothstep(0.0, 0.15, t) * smoothstep(1.0, 0.8, t);\n  float edgeFade = 1.0 - abs(vUv.x - 0.5) * 2.0;\n  edgeFade = smoothstep(0.0, 0.4, edgeFade);\n  \n  vec3 col = uColor * 1.8;\n  float alpha = endFade * edgeFade * 0.7;\n  gl_FragColor = vec4(col, alpha);\n}\n"
+  },
+  "particles": {
+    "count": 50,
+    "size": 0.15,
+    "opacity": 0.5,
+    "bounds": {
+      "x": 100,
+      "y": 100,
+      "zMin": -15,
+      "zMax": -95
+    }
+  },
+  "colorCycle": {
+    "colors": [
+      {
+        "r": 1,
+        "g": 0,
+        "b": 1
+      },
+      {
+        "r": 0,
+        "g": 1,
+        "b": 1
+      },
+      {
+        "r": 1,
+        "g": 1,
+        "b": 0
+      },
+      {
+        "r": 1,
+        "g": 0.3,
+        "b": 0
+      },
+      {
+        "r": 0,
+        "g": 1,
+        "b": 0.3
+      },
+      {
+        "r": 0.5,
+        "g": 0,
+        "b": 1
+      },
+      {
+        "r": 1,
+        "g": 0,
+        "b": 0.5
+      }
+    ],
+    "intervalMs": 4000,
+    "scanModeFixedColor": [
+      1,
+      1,
+      0
+    ]
+  },
+  "discardShader": {
+    "noise": "\n  vec3 hash3d(vec3 p) {\n    p = vec3(dot(p, vec3(127.1, 311.7, 74.7)),\n             dot(p, vec3(269.5, 183.3, 246.1)),\n             dot(p, vec3(113.5, 271.9, 124.6)));\n    return -1.0 + 2.0 * fract(sin(p) * 43758.5453123);\n  }\n\n  float noise3d(in vec3 p) {\n    vec3 i = floor(p);\n    vec3 f = fract(p);\n    vec3 u = f * f * (3.0 - 2.0 * f);\n\n    return mix(\n      mix(\n        mix(dot(hash3d(i + vec3(0.0, 0.0, 0.0)), f - vec3(0.0, 0.0, 0.0)),\n            dot(hash3d(i + vec3(1.0, 0.0, 0.0)), f - vec3(1.0, 0.0, 0.0)), u.x),\n        mix(dot(hash3d(i + vec3(0.0, 1.0, 0.0)), f - vec3(0.0, 1.0, 0.0)),\n            dot(hash3d(i + vec3(1.0, 1.0, 0.0)), f - vec3(1.0, 1.0, 0.0)), u.x), u.y),\n      mix(\n        mix(dot(hash3d(i + vec3(0.0, 0.0, 1.0)), f - vec3(0.0, 0.0, 1.0)),\n            dot(hash3d(i + vec3(1.0, 0.0, 1.0)), f - vec3(1.0, 0.0, 1.0)), u.x),\n        mix(dot(hash3d(i + vec3(0.0, 1.0, 1.0)), f - vec3(0.0, 1.0, 1.0)),\n            dot(hash3d(i + vec3(1.0, 1.0, 1.0)), f - vec3(1.0, 1.0, 1.0)), u.x), u.y), u.z);\n  }\n\n  float fbm3d(vec3 p) {\n    mat3 m = mat3(0.00, 0.80, 0.60,\n                 -0.80, 0.36, -0.48,\n                 -0.60, -0.48, 0.64);\n    float f = 0.0;\n    vec3 q = 8.0 * p;\n    f += 0.5000 * noise3d(q); q = m * q * 2.01;\n    f += 0.2500 * noise3d(q); q = m * q * 2.02;\n    f += 0.1250 * noise3d(q); q = m * q * 2.03;\n    f += 0.0625 * noise3d(q);\n    return f;\n  }\n",
+    "fragment": "\n  float noiseValue = fbm3d(vWorldPosition * 0.15);\n  noiseValue = smoothstep(-0.5, 0.5, noiseValue);\n  \n  float threshold = 1.0 - uVisibility;\n  if (noiseValue < threshold) {\n    discard;\n  }\n\n  float edgeWidth = 0.02;\n  float edge = smoothstep(threshold, threshold + edgeWidth, noiseValue);\n  gl_FragColor.rgb = mix(gl_FragColor.rgb * 10.0, gl_FragColor.rgb, edge);\n",
+    "vertexVarying": "varying vec3 vWorldPosition",
+    "worldPosition": "(modelMatrix * vec4(transformed, 1.0)).xyz"
+  }
+}

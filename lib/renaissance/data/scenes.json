@@ -1,0 +1,2391 @@
+[
+  {
+    "index": 0,
+    "handle": "hero",
+    "title": "Hero",
+    "earlyCrossfade": 0,
+    "cameraName": null,
+    "timeline": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/HeroScene.theatre-project-state_15.json",
+    "assets": [
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/843b7bb45340b0c3/EW26_Hero_251207v3_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/843b7bb45340b0c3/EW26_Hero_251207v3_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-1",
+        "exists": true,
+        "animationClips": [
+          {
+            "name": "Scene",
+            "duration": 5
+          }
+        ],
+        "cameras": [],
+        "nodesOfInterest": []
+      },
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Hero-bg-hires-optimized.ktx2",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/Hero-bg-hires-optimized.ktx2?v=1787919794",
+        "type": "ktx2",
+        "theatreKey": "asset-2",
+        "exists": true
+      }
+    ],
+    "customAssets": [],
+    "staticEffects": {
+      "sectionTransition": {
+        "fadeCenter": {
+          "z": -7.499999999999997,
+          "y": 0.7900000000000011,
+          "x": -0.07999999999999996
+        }
+      },
+      "bloom": {
+        "intensity": 4.799999999999997
+      }
+    },
+    "overlayTracks": {
+      "effects:[\"bloom\",\"intensity\"]": [
+        {
+          "id": "bChKY46ctD",
+          "position": 1.767,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 3.5
+        },
+        {
+          "id": "pc1vbK-PrD",
+          "position": 2,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 1
+        },
+        {
+          "id": "P_A_fBRqSg",
+          "position": 2.433,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0.2
+        }
+      ]
+    },
+    "activeExtras": {
+      "light-1": {
+        "display": false,
+        "intensity": 0,
+        "position": {
+          "x": 0.20000000000000467,
+          "z": -0.5500000000000005
+        },
+        "distance": 0
+      },
+      "light-2": {
+        "intensity": 0
+      },
+      "particles": {
+        "enabled": true,
+        "scale": {
+          "x": 15,
+          "y": 15,
+          "z": 15
+        },
+        "speed": 0.5,
+        "color": {
+          "r": 1,
+          "g": 0.8862745098039215,
+          "b": 0.5490196078431373,
+          "a": 1
+        },
+        "opacity": 0.5900000000000001,
+        "pulse": {
+          "speed": 2
+        },
+        "size": 0.25,
+        "position": {
+          "z": -12.292737899380214,
+          "x": 0,
+          "y": 0
+        },
+        "count": 500,
+        "turbulence": 0.5,
+        "blink": {
+          "min": 0.18999999999999978,
+          "speed": 2.1999999999999984
+        }
+      },
+      "butterflies": {
+        "enabled": false,
+        "scale": 0.060000000000000005,
+        "color": {
+          "r": 0.5607843137254902,
+          "g": 0.7764705882352941,
+          "b": 0.8980392156862745,
+          "a": 1
+        },
+        "glowColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "glowStrength": 1.7000000000000004,
+        "wanderStrength": 0.5,
+        "separationRadius": 4,
+        "boundaryRadius": 10,
+        "speed": 1.4999999999999996,
+        "position": {
+          "z": 1
+        },
+        "count": 6,
+        "hue": 2.608407346410207,
+        "movementSpeed": 2,
+        "opacity": 0.8099999999999998
+      }
+    },
+    "mode": null,
+    "fallbacks": {
+      "fallbackImage": {
+        "altText": "",
+        "height": 1780,
+        "id": "gid://shopify/ImageSource/44075759206682",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/herofallback.jpg",
+        "width": 2880
+      },
+      "fallbackImageMobile": {
+        "altText": "",
+        "height": 1780,
+        "id": "gid://shopify/ImageSource/44127834833178",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/portrait-hero-test-fallback.jpg",
+        "width": 1391
+      },
+      "fallbackImageOptimized": {
+        "id": "gid://shopify/GenericFile/44134235046170",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Hero_desktop.ktx2"
+      },
+      "fallbackImageMobileOptimized": {
+        "id": "gid://shopify/GenericFile/44135158939930",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Hero_2x.ktx2"
+      },
+      "optimizedBackgroundVideo": {}
+    }
+  },
+  {
+    "index": 1,
+    "handle": "sidekick",
+    "title": "Sidekick",
+    "earlyCrossfade": 0,
+    "cameraName": null,
+    "timeline": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/SidekickScene.theatre-project-state_14_910d17ff-f5fb-4da0-920e-1b66f8d229b3.json",
+    "assets": [
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/63ac5b514230f82a/EW26_Sidekick_251208_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/63ac5b514230f82a/EW26_Sidekick_251208_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-1",
+        "exists": true,
+        "animationClips": [
+          {
+            "name": "sidekick-eyelidsAction",
+            "duration": 3.0833332538604736
+          },
+          {
+            "name": "Armillary_02_RingAction",
+            "duration": 3.75
+          },
+          {
+            "name": "Armillary_04_RingAction",
+            "duration": 3.75
+          },
+          {
+            "name": "Armillary_05_RingAction",
+            "duration": 3.75
+          },
+          {
+            "name": "Armillary_06_RingAction",
+            "duration": 3.75
+          }
+        ],
+        "cameras": [],
+        "nodesOfInterest": []
+      },
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/EW26_Sidekick_bg_stars-optimized_89d84022-03c9-4267-bb0f-71a26f688511.ktx2",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/EW26_Sidekick_bg_stars-optimized_89d84022-03c9-4267-bb0f-71a26f688511.ktx2?v=1787919997",
+        "type": "ktx2",
+        "theatreKey": "asset-2",
+        "exists": true
+      }
+    ],
+    "customAssets": [],
+    "staticEffects": {
+      "overlay": {
+        "color": {
+          "r": 0.8627450980392157,
+          "g": 0.8627450980392157,
+          "b": 0.8156862745098039,
+          "a": 1
+        }
+      },
+      "bloom": {
+        "intensity": 0.2
+      }
+    },
+    "overlayTracks": {
+      "effects:[\"overlay\",\"position\"]": [
+        {
+          "id": "nbTZJJ1nfi",
+          "position": 1.567,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.397,
+            0.475
+          ],
+          "type": "bezier",
+          "value": -1
+        },
+        {
+          "id": "y090DaI_h2",
+          "position": 2.833,
+          "connectedRight": true,
+          "handles": [
+            0.614,
+            0.607,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0
+        },
+        {
+          "id": "HZFdCVlHf-",
+          "position": 3.567,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": -0.04
+        }
+      ],
+      "effects:[\"overlay\",\"mobilePosition\"]": [
+        {
+          "id": "rzLwim3oWc",
+          "position": 0.7,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.417,
+            0.465
+          ],
+          "type": "bezier",
+          "value": -1
+        },
+        {
+          "id": "DNIDidQhlB",
+          "position": 2,
+          "connectedRight": true,
+          "handles": [
+            0.707,
+            0.659,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": -0.001
+        }
+      ]
+    },
+    "activeExtras": {
+      "light-2": {},
+      "light-1": {
+        "position": {
+          "y": 0
+        }
+      },
+      "particles": {
+        "size": 0.2,
+        "color": {
+          "r": 1,
+          "g": 0.7843137254901961,
+          "b": 0.5215686274509804,
+          "a": 1
+        },
+        "opacity": 0.9099999999999999,
+        "speed": 0.5,
+        "sparkle": 0.38000000000000017,
+        "sparkleSpeed": 4.7,
+        "enabled": true,
+        "count": 200,
+        "scale": {
+          "x": 4,
+          "y": 4,
+          "z": 5
+        },
+        "position": {
+          "x": 0,
+          "y": 0.00011492629753973873,
+          "z": -0.29981307168472315
+        },
+        "blur": 0.4,
+        "blink": {
+          "speed": 2,
+          "min": 0
+        }
+      }
+    },
+    "mode": "dark",
+    "fallbacks": {
+      "fallbackImage": {
+        "altText": "",
+        "height": 1780,
+        "id": "gid://shopify/ImageSource/44077811990810",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Sidekick_Fallback.jpg",
+        "width": 2880
+      },
+      "fallbackImageMobile": {
+        "altText": "",
+        "height": 1748,
+        "id": "gid://shopify/ImageSource/44131577528602",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Sidekick_2x_ae10922b-27e9-4a86-ac5d-24de7957ea02.jpg",
+        "width": 804
+      },
+      "fallbackImageOptimized": {
+        "id": "gid://shopify/GenericFile/44134234980634",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Sidekick_desktop.ktx2"
+      },
+      "fallbackImageMobileOptimized": {
+        "id": "gid://shopify/GenericFile/44135158743322",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Sidekick_2x.ktx2"
+      }
+    }
+  },
+  {
+    "index": 2,
+    "handle": "agentic",
+    "title": "Agentic",
+    "earlyCrossfade": 0,
+    "cameraName": null,
+    "timeline": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/AgenticScene.theatre-project-state.json",
+    "assets": [
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/bba83c9869d8879f/Agentic_fg_251209_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/bba83c9869d8879f/Agentic_fg_251209_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-1",
+        "exists": true,
+        "animationClips": [],
+        "cameras": [],
+        "nodesOfInterest": []
+      },
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Agentic_Bg_windowscene-optimized.ktx2",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/Agentic_Bg_windowscene-optimized.ktx2?v=1787919797",
+        "type": "ktx2",
+        "theatreKey": "asset-2",
+        "exists": true
+      },
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/9567eaad495dfa3f/Rigged_Book_CS_Animated_V5_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/9567eaad495dfa3f/Rigged_Book_CS_Animated_V5_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-3",
+        "exists": true,
+        "animationClips": [
+          {
+            "name": "Scene",
+            "duration": 13.333333015441895
+          }
+        ],
+        "cameras": [],
+        "nodesOfInterest": []
+      },
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/510af84586abddc1/EW26_Agentic_Props_251209v5_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/510af84586abddc1/EW26_Agentic_Props_251209v5_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-4",
+        "exists": true,
+        "animationClips": [
+          {
+            "name": "Scene",
+            "duration": 7.083333492279053
+          }
+        ],
+        "cameras": [],
+        "nodesOfInterest": []
+      }
+    ],
+    "customAssets": [],
+    "staticEffects": {
+      "bloom": {
+        "intensity": 0
+      }
+    },
+    "overlayTracks": {
+      "effects:[\"darken\",\"intensity\"]": [
+        {
+          "id": "9KSLbJGOol",
+          "position": 1.267,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0
+        },
+        {
+          "id": "SQXWjaMd_U",
+          "position": 2.233,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0.6500000000000004
+        },
+        {
+          "id": "97p2O8AejV",
+          "position": 2.8,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.55,
+            0.085
+          ],
+          "type": "bezier",
+          "value": 0.7899999999999998
+        },
+        {
+          "id": "lh_43276HX",
+          "position": 3.5,
+          "connectedRight": true,
+          "handles": [
+            0.68,
+            0.53,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0
+        }
+      ],
+      "effects:[\"bloom\",\"intensity\"]": [
+        {
+          "id": "uWEKljqzar",
+          "position": 1.433,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0
+        },
+        {
+          "id": "tRZkvTZiTY",
+          "position": 2.6,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 3
+        }
+      ]
+    },
+    "activeExtras": {
+      "environment": {
+        "sunIntensity": 0,
+        "skyColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "groundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "display": false
+      },
+      "particles": {
+        "enabled": true,
+        "color": {
+          "r": 0.6470588235294118,
+          "g": 0.6274509803921569,
+          "b": 0.5882352941176471,
+          "a": 1
+        },
+        "speed": 0.5,
+        "scale": {
+          "x": 3,
+          "y": 3,
+          "z": 3
+        },
+        "position": {
+          "z": -0.3000000000000302,
+          "y": 0.39999999999999936
+        },
+        "count": 400,
+        "opacity": 1,
+        "size": 0.05999999999999992,
+        "pulse": {
+          "speed": 2.0000000000000004
+        },
+        "blur": 0.1399999999999998,
+        "turbulence": 0.1,
+        "sizeVariation": 0.7100000000000004,
+        "blink": {
+          "speed": 1,
+          "min": 0
+        }
+      },
+      "coinRain": {
+        "initialVelocity": 1.2,
+        "gravity": 0.6,
+        "enabled": false,
+        "position": {
+          "y": 0.4,
+          "x": -0.2,
+          "z": 0.2
+        },
+        "spread": 0.3
+      }
+    },
+    "mode": "dark",
+    "fallbacks": {
+      "fallbackImage": {
+        "altText": "",
+        "height": 2700,
+        "id": "gid://shopify/ImageSource/44121894387994",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Agentic_fg_251207.png",
+        "width": 4800
+      },
+      "fallbackImageMobile": {
+        "altText": "",
+        "height": 1748,
+        "id": "gid://shopify/ImageSource/44131578511642",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Agentic_2x_ed265a10-0482-41f0-88a1-2be1a5b94ffc.jpg",
+        "width": 804
+      },
+      "fallbackImageOptimized": {
+        "id": "gid://shopify/GenericFile/44134234751258",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Agentic_desktop.ktx2"
+      },
+      "fallbackImageMobileOptimized": {
+        "id": "gid://shopify/GenericFile/44135158579482",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Agentic_2x.ktx2"
+      }
+    }
+  },
+  {
+    "index": 3,
+    "handle": "online",
+    "title": "Online",
+    "earlyCrossfade": 0.2,
+    "cameraName": null,
+    "timeline": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/OnlineScene.theatre-project-state_1_5a646934-a79e-49ac-80a9-825d8a3fb221.json",
+    "assets": [
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/46aedb6ec0619620/EW26_Online_251209v3_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/46aedb6ec0619620/EW26_Online_251209v3_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-1",
+        "exists": true,
+        "animationClips": [
+          {
+            "name": "online_canvasAction",
+            "duration": 2.5
+          },
+          {
+            "name": "Armature.002Action.001",
+            "duration": 2.5416667461395264
+          },
+          {
+            "name": "online_handarmatureAction.001",
+            "duration": 2.5416667461395264
+          },
+          {
+            "name": "online_brushAction.001",
+            "duration": 2.5416667461395264
+          }
+        ],
+        "cameras": [],
+        "nodesOfInterest": []
+      },
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Online_bg-brighter_251201v2-optimized_5cdbdf82-dff0-40c9-8c76-111f92afc5ee.ktx2",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/Online_bg-brighter_251201v2-optimized_5cdbdf82-dff0-40c9-8c76-111f92afc5ee.ktx2?v=1787919739",
+        "type": "ktx2",
+        "theatreKey": "asset-2",
+        "exists": true
+      },
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/online_db748f47-57c8-459c-92a5-266918bb9a26.json",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/online_db748f47-57c8-459c-92a5-266918bb9a26.json?v=1787919810",
+        "type": "json",
+        "theatreKey": "asset-3",
+        "exists": true,
+        "config": {
+          "url": "/mirror/cdn.shopify.com/videos/c/o/v/87f637ea1e5944d888a5c1e6e4f97c0b.webm",
+          "fallbackImage": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/code2.ktx2"
+        }
+      }
+    ],
+    "customAssets": [],
+    "staticEffects": {
+      "bloom": {
+        "intensity": 3
+      },
+      "blur": {
+        "intensity": 0.08000000000000004
+      }
+    },
+    "overlayTracks": {
+      "effects:[\"overlay\",\"position\"]": [
+        {
+          "id": "TcGWVkKB4-",
+          "position": 1.533,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.438,
+            0.506
+          ],
+          "type": "bezier",
+          "value": -1
+        },
+        {
+          "id": "-u37diJewC",
+          "position": 2.733,
+          "connectedRight": true,
+          "handles": [
+            0.614,
+            0.556,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0
+        },
+        {
+          "id": "phSVTJ7Cxa",
+          "position": 3.767,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.479,
+            0.413
+          ],
+          "type": "bezier",
+          "value": -0.01
+        },
+        {
+          "id": "gU3IzFK6nn",
+          "position": 4.933,
+          "connectedRight": true,
+          "handles": [
+            0.572,
+            0.535,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 1
+        }
+      ],
+      "effects:[\"blur\",\"intensity\"]": [
+        {
+          "id": "YLdz8HO6uW",
+          "position": 3.867,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0
+        },
+        {
+          "id": "QbQBZILG8f",
+          "position": 4.967,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0.07
+        },
+        {
+          "id": "TF43U0Hxt8",
+          "position": 5.967,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0.07799999999999997
+        },
+        {
+          "id": "CWTDK7S42i",
+          "position": 6.467,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0
+        }
+      ],
+      "effects:[\"darken\",\"intensity\"]": [
+        {
+          "id": "s6QfDJ34ey",
+          "position": 1.167,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0
+        },
+        {
+          "id": "gTAaK2Rl93",
+          "position": 2.467,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0.7600000000000005
+        },
+        {
+          "id": "JO3pVDq78X",
+          "position": 3.4,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0
+        },
+        {
+          "id": "a453QTrgJd",
+          "position": 4.6,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 1
+        },
+        {
+          "id": "8TT-XCkeuk",
+          "position": 7,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 1
+        }
+      ],
+      "effects:[\"overlay\",\"mobilePosition\"]": [
+        {
+          "id": "pkNLJ-5Q8W",
+          "position": 1.033,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.386,
+            0.362
+          ],
+          "type": "bezier",
+          "value": -1
+        },
+        {
+          "id": "J0Cpf_IuVU",
+          "position": 1.933,
+          "connectedRight": true,
+          "handles": [
+            0.655,
+            0.618,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": -0.001
+        },
+        {
+          "id": "wx9T2hr_jm",
+          "position": 3.767,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": -0.001
+        },
+        {
+          "id": "BmDkQNM3oY",
+          "position": 4.933,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 1
+        }
+      ]
+    },
+    "activeExtras": {
+      "environment": {
+        "sunIntensity": 84.17721518987341,
+        "skyColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "groundColor": {
+          "r": 0.9882352941176471,
+          "g": 0.9882352941176471,
+          "b": 0.9882352941176471,
+          "a": 1
+        },
+        "sunPosition": {
+          "x": 0.8102655392375018,
+          "y": -0.05073431241655535,
+          "z": 0.9240468773179054
+        }
+      }
+    },
+    "mode": "dark",
+    "fallbacks": {
+      "fallbackImage": {
+        "altText": "",
+        "height": 1780,
+        "id": "gid://shopify/ImageSource/44077819756826",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Online_Fallback.jpg",
+        "width": 2880
+      },
+      "fallbackImageMobile": {
+        "altText": "",
+        "height": 1748,
+        "id": "gid://shopify/ImageSource/44131580412186",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Online_2x_19548bd3-08de-48b3-a780-e47cbf3fbf64.jpg",
+        "width": 804
+      },
+      "fallbackImageOptimized": {
+        "id": "gid://shopify/GenericFile/44134234685722",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Online_desktop.ktx2"
+      },
+      "fallbackImageMobileOptimized": {
+        "id": "gid://shopify/GenericFile/44135158874394",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Online_2x.ktx2"
+      }
+    }
+  },
+  {
+    "index": 4,
+    "handle": "retail",
+    "title": "Retail",
+    "earlyCrossfade": 0.2,
+    "cameraName": "posxxlcamera",
+    "timeline": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/RetailScene.theatre-project-state-cs-251209v2_b28f3c6c-7ab6-4036-9ac4-9f48df3024f0.json",
+    "assets": [
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/9eeb64e8194faa39/POS_V53_environment_251209v2_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/9eeb64e8194faa39/POS_V53_environment_251209v2_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-1",
+        "exists": true,
+        "animationClips": [
+          {
+            "name": "Scene",
+            "duration": 11.666666984558105
+          }
+        ],
+        "cameras": [
+          {
+            "name": "posxxlcamera",
+            "type": "perspective",
+            "perspective": {
+              "znear": 0.10000000149011612,
+              "zfar": 1000,
+              "yfov": 0.4426288715029911,
+              "aspectRatio": 1.7777777777777777
+            }
+          }
+        ],
+        "nodesOfInterest": [
+          {
+            "name": "posxxlcamera",
+            "translation": [
+              -0.5680283904075623,
+              1.1341527700424194,
+              2.81377911567688
+            ],
+            "camera": 0
+          }
+        ]
+      },
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/e51a31d48a973f83/POS_v53_Hub_251208v2_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/e51a31d48a973f83/POS_v53_Hub_251208v2_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-2",
+        "exists": true,
+        "animationClips": [
+          {
+            "name": "Scene",
+            "duration": 2.5
+          }
+        ],
+        "cameras": [],
+        "nodesOfInterest": []
+      },
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/2f9637a8c00c276d/Retail_mg_251205v2_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/2f9637a8c00c276d/Retail_mg_251205v2_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-3",
+        "exists": true,
+        "animationClips": [
+          {
+            "name": "Scene",
+            "duration": 11.666666984558105
+          }
+        ],
+        "cameras": [],
+        "nodesOfInterest": []
+      },
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/retail_a6fc6047-2df6-4784-9112-b75c8a92ac02.json",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/retail_a6fc6047-2df6-4784-9112-b75c8a92ac02.json?v=1787919788",
+        "type": "json",
+        "theatreKey": "asset-4",
+        "exists": true,
+        "config": {
+          "url": "/mirror/cdn.shopify.com/videos/c/o/v/0dc403e5d86b4e09bde292e2db6ac573.webm",
+          "fallbackImage": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/DomeTexture.ktx2"
+        }
+      }
+    ],
+    "customAssets": [],
+    "staticEffects": {
+      "bloom": {
+        "intensity": 1
+      }
+    },
+    "overlayTracks": {
+      "effects:[\"blur\",\"intensity\"]": [],
+      "effects:[\"darken\",\"intensity\"]": []
+    },
+    "activeExtras": {
+      "environment": {
+        "skyColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "groundColor": {
+          "r": 0.2,
+          "g": 0.2,
+          "b": 0.2,
+          "a": 1
+        },
+        "sunIntensity": 10.126582278481012,
+        "backgroundImageOpacity": 1,
+        "sunSize": 0.15906962025316446,
+        "sunPosition": {
+          "x": 2,
+          "z": 0.6579649955502826,
+          "y": -2
+        },
+        "display": false,
+        "lineIntensity": 1,
+        "sunColor": {
+          "r": 0.9647058823529412,
+          "g": 0.9607843137254902,
+          "b": 0.8745098039215686,
+          "a": 1
+        },
+        "envRotation": {
+          "z": 0.9544550889410913,
+          "y": 1.1930688611763642,
+          "x": 0.2386137722352728
+        },
+        "envIntensity": 1.1
+      },
+      "light-1": {
+        "intensity": 0,
+        "display": false,
+        "position": {
+          "x": -3.299999999999999,
+          "z": 0.12999999999999987,
+          "y": -0.6500000000000001
+        }
+      },
+      "particles": {
+        "enabled": true,
+        "scale": {
+          "x": 10,
+          "y": 10,
+          "z": 10
+        },
+        "position": {
+          "z": 0
+        },
+        "opacity": 0.2,
+        "speed": 0.1
+      }
+    },
+    "mode": "dark",
+    "fallbacks": {
+      "fallbackImage": {
+        "altText": "",
+        "height": 1780,
+        "id": "gid://shopify/ImageSource/44127675187482",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/compressed-Fallback-Retail-Frame1-Desktop.webp",
+        "width": 2880
+      },
+      "fallbackImageMobile": {
+        "altText": "",
+        "height": 1748,
+        "id": "gid://shopify/ImageSource/44131581427994",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Retail_2x_0adf909c-56a2-4df2-89c7-a8c53dfc4d85.jpg",
+        "width": 804
+      },
+      "fallbackImageOptimized": {
+        "id": "gid://shopify/GenericFile/44134234816794",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Retail_desktop.ktx2"
+      },
+      "fallbackImageMobileOptimized": {
+        "id": "gid://shopify/GenericFile/44135158677786",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Retail_2x.ktx2"
+      }
+    }
+  },
+  {
+    "index": 5,
+    "handle": "marketing",
+    "title": "Marketing",
+    "earlyCrossfade": 0.2,
+    "cameraName": null,
+    "timeline": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/MarketingScene.theatre-project-state_12.json",
+    "assets": [
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/2e684892a34b58b8/EW26_Marketing_251209v4_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/2e684892a34b58b8/EW26_Marketing_251209v4_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-1",
+        "exists": true,
+        "animationClips": [],
+        "cameras": [],
+        "nodesOfInterest": []
+      },
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Marketing_bg_retouched_v3-optimized.ktx2",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/Marketing_bg_retouched_v3-optimized.ktx2?v=1787919787",
+        "type": "ktx2",
+        "theatreKey": "asset-2",
+        "exists": true
+      },
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/marketing.json",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/marketing.json?v=1787919789",
+        "type": "json",
+        "theatreKey": "asset-3",
+        "exists": true,
+        "config": {
+          "url": "/mirror/cdn.shopify.com/videos/c/o/v/ed8e777bc20f4f0d8e5591ec84e5432b.webm",
+          "fallbackImage": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/skate.ktx2"
+        }
+      }
+    ],
+    "customAssets": [],
+    "staticEffects": {
+      "darken": {
+        "amount": 0.20000000000000004
+      }
+    },
+    "overlayTracks": {
+      "effects:[\"blur\",\"intensity\"]": [
+        {
+          "id": "yPSNfUZ90P",
+          "position": 1.767,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0
+        },
+        {
+          "id": "E3U-WauczM",
+          "position": 2.533,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0.04400000000000001
+        },
+        {
+          "id": "C2ZfgwMZai",
+          "position": 5.367,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0.04400000000000001
+        },
+        {
+          "id": "wJLVDquXdW",
+          "position": 6.3,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0
+        }
+      ],
+      "effects:[\"darken\",\"amount\"]": [
+        {
+          "id": "QRGUXJyFgs",
+          "position": 1.767,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0
+        },
+        {
+          "id": "6AO7vfGJSy",
+          "position": 2.533,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0.3400000000000002
+        },
+        {
+          "id": "DOtDxriz4q",
+          "position": 3.767,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0.31000000000000005
+        },
+        {
+          "id": "vIg2bQnItN",
+          "position": 5.133,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0
+        }
+      ],
+      "effects:[\"darken\",\"intensity\"]": [
+        {
+          "id": "SEhsg0tQPE",
+          "position": 2.033,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0
+        },
+        {
+          "id": "-KO52tMNVc",
+          "position": 2.7,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0.7300000000000002
+        },
+        {
+          "id": "x2PoRcbrvk",
+          "position": 3.867,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0.7300000000000002
+        },
+        {
+          "id": "tdPrrJKHB3",
+          "position": 5.5,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 0
+        }
+      ]
+    },
+    "activeExtras": {
+      "particles": {
+        "enabled": true,
+        "count": 500,
+        "color": {
+          "r": 1,
+          "g": 0.6862745098039216,
+          "b": 0.0784313725490196,
+          "a": 1
+        },
+        "scale": {
+          "x": 3,
+          "y": 3,
+          "z": 3
+        },
+        "position": {
+          "z": -2
+        },
+        "speed": 1,
+        "opacity": 1,
+        "blink": {
+          "speed": 2,
+          "min": 0
+        },
+        "turbulence": 1,
+        "sizeVariation": 0.5999999999999996,
+        "blur": 0.20000000000000004,
+        "size": 0.07000000000000002
+      },
+      "butterflies": {
+        "enabled": true,
+        "separationRadius": 5,
+        "boundaryRadius": 6,
+        "scale": 0.025,
+        "speed": 2,
+        "position": {
+          "z": -10
+        },
+        "count": 6,
+        "hue": 0
+      }
+    },
+    "mode": "dark",
+    "fallbacks": {
+      "fallbackImage": {
+        "altText": "",
+        "height": 1780,
+        "id": "gid://shopify/ImageSource/44077823885594",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Marketing_Fallback.jpg",
+        "width": 2880
+      },
+      "fallbackImageMobile": {
+        "altText": "",
+        "height": 1748,
+        "id": "gid://shopify/ImageSource/44131582312730",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Marketing_2x_9bdae360-044d-4e84-a72c-19df76beae85.jpg",
+        "width": 804
+      },
+      "fallbackImageOptimized": {
+        "id": "gid://shopify/GenericFile/44134235078938",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Marketing_desktop.ktx2"
+      },
+      "fallbackImageMobileOptimized": {
+        "id": "gid://shopify/GenericFile/44135158546714",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Marketing_2x.ktx2"
+      }
+    }
+  },
+  {
+    "index": 6,
+    "handle": "checkout",
+    "title": "Checkout",
+    "earlyCrossfade": 0.2,
+    "cameraName": null,
+    "timeline": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/CheckoutScene.theatre-project-state_13.json",
+    "assets": [
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/f889c7c758e60536/EW26_Checkout_251209_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/f889c7c758e60536/EW26_Checkout_251209_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-1",
+        "exists": true,
+        "animationClips": [
+          {
+            "name": "Armature.003Action",
+            "duration": 3.75
+          },
+          {
+            "name": "Checkout Eyes",
+            "duration": 2.875
+          },
+          {
+            "name": "ArmatureAction",
+            "duration": 3.75
+          },
+          {
+            "name": "Credit CardAction",
+            "duration": 3.75
+          }
+        ],
+        "cameras": [],
+        "nodesOfInterest": [
+          {
+            "name": "checkout-hat",
+            "mesh": 6,
+            "skin": 1
+          }
+        ]
+      },
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Checkout_bg_diffuse-optimized.ktx2",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/Checkout_bg_diffuse-optimized.ktx2?v=1787919790",
+        "type": "ktx2",
+        "theatreKey": "asset-2",
+        "exists": true
+      }
+    ],
+    "customAssets": [],
+    "staticEffects": {
+      "bloom": {
+        "intensity": 3
+      }
+    },
+    "overlayTracks": {
+      "effects:[\"bloom\",\"intensity\"]": [
+        {
+          "id": "YxPKj8zSEC",
+          "position": 2.033,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 1
+        }
+      ]
+    },
+    "activeExtras": {
+      "environment": {
+        "sunColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        }
+      },
+      "light-2": {
+        "display": false
+      },
+      "particles": {
+        "enabled": true,
+        "count": 300,
+        "scale": {
+          "x": 3,
+          "y": 3,
+          "z": 4
+        },
+        "color": {
+          "r": 1,
+          "g": 0.7450980392156863,
+          "b": 0.14901960784313725,
+          "a": 1
+        },
+        "speed": 2,
+        "opacity": 0.8799999999999999,
+        "size": 0.07,
+        "position": {
+          "z": 0.7999999999999999
+        },
+        "blur": 0.2899999999999998,
+        "blink": {
+          "speed": 2.5,
+          "min": 0
+        }
+      },
+      "butterflies": {
+        "enabled": true,
+        "position": {
+          "z": -0.2999999999999815
+        },
+        "scale": 0.06,
+        "speed": 2.5,
+        "movementSpeed": 0.6,
+        "hue": 3.141592653589793,
+        "glowColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "count": 4,
+        "boundaryRadius": 6
+      },
+      "checkout-effect": {
+        "sobelColor": {
+          "r": 0.9686274509803922,
+          "g": 0.9686274509803922,
+          "b": 0.9333333333333333,
+          "a": 1
+        }
+      }
+    },
+    "mode": "dark",
+    "fallbacks": {
+      "fallbackImage": {
+        "altText": "",
+        "height": 1780,
+        "id": "gid://shopify/ImageSource/44134130090266",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Checkout_Fallback_251209.jpg",
+        "width": 2880
+      },
+      "fallbackImageMobile": {
+        "altText": "",
+        "height": 1748,
+        "id": "gid://shopify/ImageSource/44131576316186",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Checkout_2x_3d90b8e1-3861-4d8e-975c-53c1adfbff04.jpg",
+        "width": 804
+      },
+      "fallbackImageOptimized": {
+        "id": "gid://shopify/GenericFile/44134234915098",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Checkout_desktop.ktx2"
+      },
+      "fallbackImageMobileOptimized": {
+        "id": "gid://shopify/GenericFile/44135158710554",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Checkout_2x.ktx2"
+      }
+    }
+  },
+  {
+    "index": 7,
+    "handle": "operations",
+    "title": "Operations",
+    "earlyCrossfade": 0.2,
+    "cameraName": null,
+    "timeline": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/OperationsScene.theatre-project-state_8.json",
+    "assets": [
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/b44ac013cda7d317/EW26_Operations_251207_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/b44ac013cda7d317/EW26_Operations_251207_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-1",
+        "exists": true,
+        "animationClips": [
+          {
+            "name": "Operations People",
+            "duration": 0.0833333358168602
+          },
+          {
+            "name": "eyes-m-01Action",
+            "duration": 7.5
+          },
+          {
+            "name": "eyes-m-02Action",
+            "duration": 7.5
+          },
+          {
+            "name": "eyes-m-03Action",
+            "duration": 7.5
+          },
+          {
+            "name": "eyes-w-01Action",
+            "duration": 7.5
+          },
+          {
+            "name": "eyes-w-02Action",
+            "duration": 7.5
+          }
+        ],
+        "cameras": [],
+        "nodesOfInterest": []
+      },
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Operations_bg_diffuse-optimized.ktx2",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/Operations_bg_diffuse-optimized.ktx2?v=1787919789",
+        "type": "ktx2",
+        "theatreKey": "asset-2",
+        "exists": true
+      },
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/0337cd9bc6d18b55/Renaissance_Globe_251209v2-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/0337cd9bc6d18b55/Renaissance_Globe_251209v2-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-3",
+        "exists": true,
+        "animationClips": [],
+        "cameras": [],
+        "nodesOfInterest": [
+          {
+            "name": "earth",
+            "translation": [
+              0,
+              53.52785873413086,
+              0
+            ],
+            "mesh": 0
+          }
+        ]
+      }
+    ],
+    "customAssets": [
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/equirectangular_map.webp",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/equirectangular_map.webp?v=1764887157",
+        "type": "webp",
+        "exists": true
+      },
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/packed_dirt_normal_map.jpg",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/packed_dirt_normal_map.jpg?v=1764887157",
+        "type": "jpg",
+        "exists": true
+      }
+    ],
+    "staticEffects": {},
+    "overlayTracks": {
+      "effects:[\"bloom\",\"intensity\"]": [
+        {
+          "id": "2Z5tT8gebF",
+          "position": 1.267,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 3
+        },
+        {
+          "id": "ex9PrdhYo3",
+          "position": 1.633,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 15.799999999999994
+        },
+        {
+          "id": "Tsm5oEfeZL",
+          "position": 3.167,
+          "connectedRight": true,
+          "handles": [
+            0.5,
+            1,
+            0.5,
+            0
+          ],
+          "type": "bezier",
+          "value": 3
+        }
+      ]
+    },
+    "activeExtras": {
+      "light-2": {},
+      "light-1": {
+        "position": {
+          "y": -0.30999999999999994,
+          "x": -0.03999999999999979
+        },
+        "intensity": 6.499999999999996,
+        "color": {
+          "r": 0.1607843137254902,
+          "g": 0.4549019607843137,
+          "b": 0.7215686274509804,
+          "a": 1
+        },
+        "distance": 5.899999999999993,
+        "display": false
+      },
+      "particles": {
+        "enabled": true,
+        "scale": {
+          "x": 2,
+          "y": 2,
+          "z": 2
+        },
+        "position": {
+          "z": -0.28999999999999815
+        },
+        "speed": 1,
+        "size": 0.10999999999999838,
+        "pulse": {
+          "min": 0.15000000000000002,
+          "speed": 3.2000000000000006
+        },
+        "color": {
+          "r": 1,
+          "g": 0.9098039215686274,
+          "b": 0.5019607843137255,
+          "a": 1
+        },
+        "opacity": 0.6,
+        "blur": 0.16999999999999985,
+        "turbulence": 1,
+        "blink": {
+          "speed": 3
+        },
+        "count": 40
+      }
+    },
+    "mode": "dark",
+    "fallbacks": {
+      "fallbackImage": {
+        "altText": "",
+        "height": 1780,
+        "id": "gid://shopify/ImageSource/44077815693594",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Operations_Fallback.jpg",
+        "width": 2880
+      },
+      "fallbackImageMobile": {
+        "altText": "",
+        "height": 1748,
+        "id": "gid://shopify/ImageSource/44131584540954",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Operation_2x_db6348e7-2481-4c47-9a8b-076bb53775c3.jpg",
+        "width": 804
+      },
+      "fallbackImageOptimized": {
+        "id": "gid://shopify/GenericFile/44134234784026",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Operations_desktop.ktx2"
+      },
+      "fallbackImageMobileOptimized": {
+        "id": "gid://shopify/GenericFile/44135158841626",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Operation_2x.ktx2"
+      }
+    }
+  },
+  {
+    "index": 8,
+    "handle": "shop-app",
+    "title": "Shop app",
+    "earlyCrossfade": 0.2,
+    "cameraName": null,
+    "timeline": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/ShopAppScene.theatre-project-state_8.json",
+    "assets": [
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/3ffd3b2a5abbe541/EW26_ShopApp_251208v3_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/3ffd3b2a5abbe541/EW26_ShopApp_251208v3_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-1",
+        "exists": true,
+        "animationClips": [
+          {
+            "name": "shopappbody",
+            "duration": 5
+          },
+          {
+            "name": "shopapp-arm",
+            "duration": 5
+          },
+          {
+            "name": "shopapphandAction",
+            "duration": 5
+          },
+          {
+            "name": "shopapp-phone",
+            "duration": 5
+          },
+          {
+            "name": "Horse-eyeAction",
+            "duration": 3.75
+          }
+        ],
+        "cameras": [],
+        "nodesOfInterest": []
+      },
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/ShopApp_bg_diffuse-optimized.ktx2",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/ShopApp_bg_diffuse-optimized.ktx2?v=1787919790",
+        "type": "ktx2",
+        "theatreKey": "asset-2",
+        "exists": true
+      }
+    ],
+    "customAssets": [],
+    "staticEffects": {},
+    "overlayTracks": {},
+    "activeExtras": {
+      "particles": {
+        "enabled": true,
+        "size": 0.11999999999999901,
+        "count": 200,
+        "position": {
+          "z": -4.1999999999999975
+        },
+        "scale": {
+          "x": 4,
+          "y": 4,
+          "z": 4
+        },
+        "blur": 0.2299999999999998,
+        "color": {
+          "r": 0.7686274509803922,
+          "g": 0.7490196078431373,
+          "b": 0.7098039215686275,
+          "a": 1
+        },
+        "blink": {
+          "speed": 2,
+          "min": 0
+        },
+        "turbulence": 0.5,
+        "speed": 1,
+        "opacity": 0.9000000000000002
+      },
+      "environment": {
+        "sunSize": 0.001,
+        "sunColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        }
+      },
+      "light-2": {
+        "distance": 0.1
+      },
+      "light-1": {
+        "distance": 0.1
+      },
+      "butterflies": {
+        "enabled": true,
+        "speed": 2,
+        "scale": 0.04,
+        "position": {
+          "z": 2.2000000000000037
+        },
+        "hue": -2.850000000000001,
+        "count": 2,
+        "boundaryRadius": 12,
+        "opacity": 0.8
+      }
+    },
+    "mode": "dark",
+    "fallbacks": {
+      "fallbackImage": {
+        "altText": "",
+        "height": 1780,
+        "id": "gid://shopify/ImageSource/44077813858586",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Shop_app_Fallback.jpg",
+        "width": 2880
+      },
+      "fallbackImageMobile": {
+        "altText": "",
+        "height": 1748,
+        "id": "gid://shopify/ImageSource/44131586638106",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Shopapp_2x_9bda6267-e34e-470a-b8ff-7749b27e65bc.jpg",
+        "width": 804
+      },
+      "fallbackImageOptimized": {
+        "id": "gid://shopify/GenericFile/44134234849562",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/ShopApp_desktop.ktx2"
+      },
+      "fallbackImageMobileOptimized": {
+        "id": "gid://shopify/GenericFile/44135158808858",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Shopapp_2x.ktx2"
+      }
+    }
+  },
+  {
+    "index": 9,
+    "handle": "b2b",
+    "title": "B2B",
+    "earlyCrossfade": 0.2,
+    "cameraName": null,
+    "timeline": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/B2BScene.theatre-project-state_4.json",
+    "assets": [
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/73f4d9f62ba07f6e/EW26_B2B_251205v2_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/73f4d9f62ba07f6e/EW26_B2B_251205v2_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-1",
+        "exists": true,
+        "animationClips": [
+          {
+            "name": "Scene",
+            "duration": 2.5
+          }
+        ],
+        "cameras": [],
+        "nodesOfInterest": []
+      },
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/B2B_Bg_Dark_251202-optimized.ktx2",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/B2B_Bg_Dark_251202-optimized.ktx2?v=1787919790",
+        "type": "ktx2",
+        "theatreKey": "asset-2",
+        "exists": true
+      }
+    ],
+    "customAssets": [],
+    "staticEffects": {},
+    "overlayTracks": {},
+    "activeExtras": {
+      "light-1": {
+        "intensity": 29.099999999999927,
+        "distance": 3.1000000000000036,
+        "display": true,
+        "position": {
+          "x": -0.43000000000000005,
+          "y": -0.619999999999999,
+          "z": -5.019999999999996
+        },
+        "color": {
+          "r": 0.47843137254901963,
+          "g": 0.6470588235294118,
+          "b": 0.6470588235294118,
+          "a": 1
+        }
+      },
+      "particles": {
+        "enabled": true,
+        "scale": {
+          "x": 5,
+          "y": 5,
+          "z": 5
+        },
+        "blur": 0.23999999999999988,
+        "position": {
+          "z": -8.999999999999996
+        },
+        "size": 0.4200000000000002,
+        "blink": {
+          "speed": 2,
+          "min": 0
+        },
+        "speed": 1,
+        "count": 50
+      }
+    },
+    "mode": "dark",
+    "fallbacks": {
+      "fallbackImage": {
+        "altText": "",
+        "height": 1780,
+        "id": "gid://shopify/ImageSource/44131600367898",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/newProperty_1_B2B.jpg",
+        "width": 2880
+      },
+      "fallbackImageMobile": {
+        "altText": "",
+        "height": 1748,
+        "id": "gid://shopify/ImageSource/44131601318170",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_B2B_2x_1353d91d-00eb-455e-bafb-18762b0240cb.jpg",
+        "width": 804
+      },
+      "fallbackImageOptimized": {
+        "id": "gid://shopify/GenericFile/44134235013402",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/B2B_desktop.ktx2"
+      },
+      "fallbackImageMobileOptimized": {
+        "id": "gid://shopify/GenericFile/44135158612250",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_B2B_2x.ktx2"
+      }
+    }
+  },
+  {
+    "index": 10,
+    "handle": "finance",
+    "title": "Finance",
+    "earlyCrossfade": 0.2,
+    "cameraName": null,
+    "timeline": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/FinanceScene.theatre-project-state_7.json",
+    "assets": [
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/614d6d0fa1836313/EW26_Finance_251208v2_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/614d6d0fa1836313/EW26_Finance_251208v2_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-1",
+        "exists": true,
+        "animationClips": [
+          {
+            "name": "Scene",
+            "duration": 5
+          }
+        ],
+        "cameras": [],
+        "nodesOfInterest": []
+      },
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Finance_bg-optimized.ktx2",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/Finance_bg-optimized.ktx2?v=1787919790",
+        "type": "ktx2",
+        "theatreKey": "asset-2",
+        "exists": true
+      }
+    ],
+    "customAssets": [],
+    "staticEffects": {
+      "bloom": {
+        "intensity": 2
+      }
+    },
+    "overlayTracks": {},
+    "activeExtras": {
+      "particles": {
+        "enabled": true,
+        "scale": {
+          "x": 5,
+          "y": 5,
+          "z": 5
+        },
+        "position": {
+          "z": -2.999999999999999
+        },
+        "opacity": 0.31000000000000005,
+        "size": 0.19999999999999976,
+        "count": 200,
+        "color": {
+          "r": 0.5215686274509804,
+          "g": 0.5607843137254902,
+          "b": 0.4980392156862745,
+          "a": 1
+        },
+        "blur": 0.24999999999999978
+      }
+    },
+    "mode": "dark",
+    "fallbacks": {
+      "fallbackImage": {
+        "altText": "",
+        "height": 1780,
+        "id": "gid://shopify/ImageSource/44077816709402",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Finance_Fallback.jpg",
+        "width": 2880
+      },
+      "fallbackImageMobile": {
+        "altText": "",
+        "height": 1748,
+        "id": "gid://shopify/ImageSource/44131589292314",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Finance_2x_7fce0bd0-4a7b-4811-8eb9-a51d52fd357b.jpg",
+        "width": 804
+      },
+      "fallbackImageOptimized": {
+        "id": "gid://shopify/GenericFile/44134234947866",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Finance_desktop.ktx2"
+      },
+      "fallbackImageMobileOptimized": {
+        "id": "gid://shopify/GenericFile/44135158645018",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Finance_2x.ktx2"
+      }
+    }
+  },
+  {
+    "index": 11,
+    "handle": "shipping",
+    "title": "Shipping",
+    "earlyCrossfade": 0.2,
+    "cameraName": null,
+    "timeline": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/ShippingScene.theatre-project-state_12.json",
+    "assets": [
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/e8cd2871309d6b03/EW26_Shipping_251204_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/e8cd2871309d6b03/EW26_Shipping_251204_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-1",
+        "exists": true,
+        "animationClips": [
+          {
+            "name": "Cheetah Loop",
+            "duration": 2.9583332538604736
+          },
+          {
+            "name": "Box Opening",
+            "duration": 2.9166667461395264
+          },
+          {
+            "name": "Belt Unhook",
+            "duration": 2.9166667461395264
+          }
+        ],
+        "cameras": [],
+        "nodesOfInterest": []
+      },
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Shipping_bg_diffuse-optimized.ktx2",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/Shipping_bg_diffuse-optimized.ktx2?v=1787919790",
+        "type": "ktx2",
+        "theatreKey": "asset-2",
+        "exists": true
+      },
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/f8cc4911eb12bc06/key.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/f8cc4911eb12bc06/key.glb",
+        "type": "glb",
+        "theatreKey": "asset-3",
+        "exists": true,
+        "animationClips": [],
+        "cameras": [],
+        "nodesOfInterest": []
+      }
+    ],
+    "customAssets": [
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/f8cc4911eb12bc06/key.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/f8cc4911eb12bc06/key.glb",
+        "type": "glb",
+        "exists": true,
+        "animationClips": [],
+        "cameras": [],
+        "nodesOfInterest": []
+      }
+    ],
+    "staticEffects": {
+      "bloom": {
+        "intensity": 2
+      }
+    },
+    "overlayTracks": {},
+    "activeExtras": {
+      "environment": {
+        "sunIntensity": 0,
+        "skyColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "groundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "display": false
+      },
+      "particles": {
+        "enabled": true,
+        "color": {
+          "r": 1,
+          "g": 0.49411764705882355,
+          "b": 0.12941176470588237,
+          "a": 1
+        },
+        "speed": 2,
+        "scale": {
+          "x": 3,
+          "y": 3,
+          "z": 5
+        },
+        "position": {
+          "z": -1.1999999999999857
+        },
+        "count": 100,
+        "opacity": 0.8399999999999999,
+        "size": 0.12999999999999998,
+        "blur": 0.14999999999999963,
+        "blink": {
+          "speed": 3,
+          "min": 0
+        },
+        "turbulence": 1
+      },
+      "coinRain": {
+        "initialVelocity": 1.2,
+        "gravity": 0.6,
+        "enabled": false,
+        "position": {
+          "y": 0.5,
+          "x": -0.2,
+          "z": 0
+        },
+        "spread": 0.2
+      },
+      "butterflies": {
+        "enabled": false
+      }
+    },
+    "mode": "dark",
+    "fallbacks": {
+      "fallbackImage": {
+        "altText": "",
+        "height": 1780,
+        "id": "gid://shopify/ImageSource/44077822312730",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Shipping_Fallback.jpg",
+        "width": 2880
+      },
+      "fallbackImageMobile": {
+        "altText": "",
+        "height": 1748,
+        "id": "gid://shopify/ImageSource/44131590406426",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Shipping_2x_20393750-bbde-4f1f-ba88-24517c3ade74.jpg",
+        "width": 804
+      },
+      "fallbackImageOptimized": {
+        "id": "gid://shopify/GenericFile/44134234882330",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Shipping_desktop.ktx2"
+      },
+      "fallbackImageMobileOptimized": {
+        "id": "gid://shopify/GenericFile/44135158776090",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Shipping_2x.ktx2"
+      }
+    }
+  },
+  {
+    "index": 12,
+    "handle": "developer",
+    "title": "Developer",
+    "earlyCrossfade": 0.2,
+    "cameraName": null,
+    "timeline": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/DeveloperScene.theatre-project-state_5.json",
+    "assets": [
+      {
+        "url": "/mirror/editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/0285be8865787635/EW26_Developer_251207v5_compressed-optimized.glb",
+        "sourceUrl": "https://editions-winter-2026.myshopify.com/cdn/shop/3d/models/o/0285be8865787635/EW26_Developer_251207v5_compressed-optimized.glb",
+        "type": "glb",
+        "theatreKey": "asset-1",
+        "exists": true,
+        "animationClips": [
+          {
+            "name": "Scene",
+            "duration": 7.5
+          }
+        ],
+        "cameras": [],
+        "nodesOfInterest": []
+      },
+      {
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Developer_bg_diffuse-optimized.ktx2",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/Developer_bg_diffuse-optimized.ktx2?v=1787919790",
+        "type": "ktx2",
+        "theatreKey": "asset-2",
+        "exists": true
+      }
+    ],
+    "customAssets": [],
+    "staticEffects": {
+      "bloom": {
+        "intensity": 1.2000000000000006
+      }
+    },
+    "overlayTracks": {},
+    "activeExtras": {
+      "light-2": {},
+      "light-1": {
+        "position": {
+          "y": -0.30999999999999994,
+          "x": -0.03999999999999979
+        },
+        "intensity": 6.499999999999996,
+        "color": {
+          "r": 1,
+          "g": 0,
+          "b": 0.9607843137254902,
+          "a": 1
+        },
+        "distance": 0.7999999999999999,
+        "display": false
+      },
+      "butterflies": {
+        "enabled": false,
+        "speed": 1.5,
+        "scale": 0.06,
+        "boundaryRadius": 4,
+        "count": 2,
+        "hue": 0
+      },
+      "particles": {
+        "enabled": true,
+        "scale": {
+          "x": 5,
+          "y": 5,
+          "z": 5
+        },
+        "position": {
+          "z": -0.39999999999999847
+        },
+        "size": 0.4199999999999996,
+        "blink": {
+          "speed": 2,
+          "min": 0
+        },
+        "count": 100,
+        "blur": 0.20000000000000007,
+        "color": {
+          "r": 0.796078431372549,
+          "g": 0.792156862745098,
+          "b": 0.6980392156862745,
+          "a": 1
+        },
+        "opacity": 0.5000000000000002
+      }
+    },
+    "mode": "light",
+    "fallbacks": {
+      "fallbackImage": {
+        "altText": "",
+        "height": 1780,
+        "id": "gid://shopify/ImageSource/44124578709786",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Property_1_Developer.jpg",
+        "width": 2880
+      },
+      "fallbackImageMobile": {
+        "altText": "",
+        "height": 1748,
+        "id": "gid://shopify/ImageSource/44131592634650",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Developer_2x_a0cdd077-d691-4a02-888a-2641d7cc1c6f.jpg",
+        "width": 804
+      },
+      "fallbackImageOptimized": {
+        "id": "gid://shopify/GenericFile/44134234718490",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Developer_desktop.ktx2"
+      },
+      "fallbackImageMobileOptimized": {
+        "id": "gid://shopify/GenericFile/44135158907162",
+        "mimeType": "application/octet-stream",
+        "url": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Fallback_Mobile_Developer_2x.ktx2"
+      }
+    }
+  }
+]

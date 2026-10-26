@@ -1,0 +1,283 @@
+.native-rive {
+  position: relative;
+  width: 100%;
+  aspect-ratio: var(--rive-ratio);
+  overflow: hidden;
+}
+.native-rive canvas,
+.native-rive-poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s;
+}
+video {
+  object-fit: cover;
+}
+[data-section-id] {
+  scroll-margin-top: 0;
+}
+.native-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #090c10b8;
+  backdrop-filter: blur(5px);
+  font-family: NeueMontreal, Arial, sans-serif;
+  font-weight: 700;
+}
+.native-modal {
+  position: relative;
+  background: #dcdcd0;
+  color: #252822;
+  width: min(580px, 100%);
+  max-height: 90svh;
+  overflow: auto;
+  padding: 40px;
+  border: 1px solid #292b2a;
+  box-shadow: 0 15px 70px #0005;
+}
+.native-modal-close {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  font: 28px/1 Arial;
+  z-index: 3;
+}
+.native-modal h2 {
+  font:
+    clamp(28px, 4vw, 46px) / 1 HWCigars,
+    serif;
+  margin: 14px 0 24px;
+}
+.native-modal p {
+  font:
+    20px/1.25 HWCigars,
+    serif;
+  margin: 16px 0 24px;
+}
+.native-modal-eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.native-modal-video .native-modal {
+  width: min(1200px, 95vw);
+  padding: 0;
+  background: #000;
+  overflow: visible;
+  aspect-ratio: 16/9;
+}
+.native-modal-video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.native-modal-video .native-modal-close {
+  top: -32px;
+  right: 0;
+  color: #fff;
+}
+.native-modal-app .native-modal {
+  width: min(720px, 100%);
+}
+.native-action {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  background: #292d22;
+  color: #f7f7ee;
+  margin-top: 24px;
+  font-size: 14px;
+}
+.native-copy {
+  text-decoration: underline;
+  padding: 14px 0;
+  font-size: 12px;
+}
+.native-modal-merch {
+  justify-content: flex-end;
+  padding-right: 9vw;
+}
+.native-modal-merch .native-modal {
+  width: 400px;
+  padding: 32px 24px;
+}
+.native-modal-merch p {
+  font:
+    14px/1.35 NeueMontreal,
+    sans-serif;
+}
+.merch-image {
+  display: block;
+  width: 100%;
+  max-height: 210px;
+  object-fit: contain;
+}
+.merch-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #4443;
+  padding: 14px 0;
+  font-size: 13px;
+}
+.merch-quantity {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.merch-quantity button {
+  border: 1px solid #4445;
+  width: 24px;
+  height: 24px;
+}
+.native-modal small {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 10px;
+}
+.cloud-card {
+  transition:
+    transform 0.4s,
+    opacity 0.4s;
+}
+.cloud-card-interactive:hover,
+.cloud-card-interactive:focus-visible {
+  opacity: 1 !important;
+  z-index: 20;
+  filter: drop-shadow(0 15px 15px #0003);
+}
+.skill-tag-button:hover {
+  transform: scale(1.07) !important;
+  opacity: 1 !important;
+}
+.search-result-description {
+  display: block;
+  font:
+    12px/1.4 NeueMontreal,
+    sans-serif;
+  opacity: 0.7;
+  margin-top: 6px;
+}
+.edition-panel nav {
+  max-height: 65svh;
+  overflow: auto;
+}
+.edition-panel nav a {
+  align-items: flex-start;
+}
+.chapter-navigation a[aria-current="location"] {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.renaissance-experience[data-theme="light"] .edition-header,
+.renaissance-experience[data-theme="light"] .hero-navigation {
+  color: #292d22;
+}
+.artwork-accessible {
+  position: fixed;
+  bottom: 18px;
+  left: 18px;
+  z-index: 80;
+  transform: translateY(150%);
+  background: #dcdcd0;
+  color: #252822;
+  padding: 12px;
+}
+.artwork-accessible:focus-visible {
+  transform: none;
+}
+@media (max-width: 767px) {
+  .native-modal-backdrop {
+    padding: 18px;
+  }
+  .native-modal {
+    padding: 30px 24px;
+  }
+  .native-modal-merch {
+    align-items: flex-end;
+    padding: 0;
+  }
+  .native-modal-merch .native-modal {
+    width: 100%;
+    max-height: 85svh;
+  }
+  .native-modal-video {
+    padding: 12px;
+  }
+}
+
+.hero-navigation nav ul li a::after,
+.hero-navigation nav ul li a span::after {
+  content: none;
+}
+.hero-navigation nav ul li a span {
+  width: auto;
+  display: block;
+  flex: none;
+  white-space: nowrap;
+}
+.hero-navigation nav ul li a {
+  width: 100%;
+}
+
+.key-explorer { position: relative; width: 100%; height: 100svh; overflow: hidden; background: #000; }
+.key-explorer canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity .5s; touch-action: none; }
+.key-explorer[data-loaded="true"] canvas { opacity: 1; }
+.key-loading { position: absolute; left: calc(50% - 16px); top: calc(50% - 16px); width: 32px; height: 32px; border: 2px solid #ffffff1a; border-top-color: #fff; border-radius: 50%; animation: key-loading-spin .8s linear infinite; }
+.key-error { position: absolute; inset: 40% 20px auto; text-align: center; color: #fff; font: 14px/1.5 Arial,sans-serif; }
+@keyframes key-loading-spin { to { transform: rotate(360deg); } }
+.native-modal-key .key-explorer {
+  width: 100%;
+  height: 60svh;
+}
+
+.native-modal-merch {
+  background: transparent;
+  backdrop-filter: none;
+}
+
+@media (max-width: 939px) {
+  #top-skills-horizontal-scroll-container {
+    overflow-x: auto;
+    justify-content: flex-start;
+    width: 100%;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
+  #top-skills-card-container {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+.painting-fallback {
+  background-image: var(--fallback-image);
+}
+.renaissance-experience[data-header-theme="light"] .edition-header {
+  color: #252822;
+}
+.renaissance-experience[data-header-theme="dark"] .edition-header {
+  color: #f7f7ee;
+}
+.renaissance-experience[data-header-solid="true"][data-header-theme="light"]
+  .edition-header {
+  background: #dcdcd0;
+}
+.renaissance-experience[data-merch="true"] .edition-header,
+.renaissance-experience[data-merch="true"] .hero-navigation {
+  color: #252822;
+}
+.native-modal-merch .merch-image {
+  max-height: 160px;
+}
+
+.renaissance-experience[data-status="ready"] .painting-stage > canvas[data-loading-scene] {opacity:0;}

@@ -1,0 +1,175 @@
+/* Layout is native React; drawing and title choreography use the original CSS transitions. */
+.painting-stage {
+  background: #000;
+}
+.painting-stage canvas {
+  transition: opacity 0.3s ease;
+}
+.painting-fallback {
+  opacity: 0;
+}
+.renaissance-experience[data-status="fallback"] .painting-fallback {
+  opacity: 1;
+}
+.renaissance-experience[data-initiated="false"] .edition-header {
+  opacity: 0;
+}
+.hero-navigation {
+  position: absolute;
+  inset: 0 auto auto 0;
+  height: 100svh;
+  width: 20%;
+  padding: 12px;
+  z-index: 12;
+  pointer-events: none;
+}
+.hero-navigation-frame {
+  position: absolute;
+  top: 50%;
+  left: 50vw;
+  translate: -50% -50%;
+  width: min(340px, calc(100vw - 24px));
+  aspect-ratio: 340 / 464;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+@layer transitions {
+  .davinci-lines__border {
+    opacity: 0;
+  }
+}
+.renaissance-title {
+  width: 55%;
+  display: inline-block;
+  line-height: 0;
+  margin: 0;
+}
+.renaissance-title a {
+  pointer-events: auto;
+}
+.title {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  transform-origin: top left;
+}
+.hero-subtitle {
+  margin: 10px 0 0;
+  max-width: 300px;
+  font-family: HWCigars, Georgia, serif;
+  font-size: 17px;
+  letter-spacing: -0.04em;
+  line-height: 0.97;
+  text-box: trim-both cap alphabetic;
+  text-wrap: balance;
+}
+@layer transitions {
+  .subtitle {
+    opacity: 0;
+  }
+}
+.chapter-navigation {
+  margin-top: 20px;
+}
+.chapter-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@layer transitions {
+  .chapter-navigation ul {
+    width: 100%;
+  }
+}
+.chapter-navigation a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 17.2px;
+  font:
+    700 18px/0.95 NeueMontreal,
+    Helvetica,
+    Arial,
+    sans-serif;
+  letter-spacing: -0.02em;
+  pointer-events: auto;
+}
+.chapter-navigation a > span:first-child {
+  text-box: trim-both cap alphabetic;
+}
+.chapter-navigation a:hover {
+  opacity: 0.65;
+}
+.chapter-numeral {
+  font:
+    400 12px/1 HWCigars,
+    Georgia,
+    serif;
+  letter-spacing: 0;
+  opacity: 0.75;
+}
+.edition-legal {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  font-size: 10px;
+  line-height: 1.1;
+}
+.edition-legal p {
+  font-family: NeueMontreal, Arial, sans-serif;
+}
+.edition-legal a {
+  display: block;
+  font-family: HWCigars, serif;
+  margin-top: 2px;
+  pointer-events: auto;
+}
+.edition-legal a:hover {
+  text-decoration: underline;
+}
+.davinci-lines__container {
+  z-index: -1;
+}
+.davinci-lines__title {
+  width: 55%;
+}
+.composition-grid {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+.renaissance-experience[data-theme="light"] .davinci-lines {
+  color: #909083;
+}
+@media (min-width: 940px) {
+  .hero-navigation {
+    position: fixed;
+  }
+}
+@media (max-width: 939px) {
+  .edition-legal {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .davinci-lines__loader,
+  .davinci-lines__complete {
+    display: none;
+  }
+  .painting-stage canvas {
+    transition: none;
+  }
+}
