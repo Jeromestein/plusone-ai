@@ -1,0 +1,52 @@
+{
+  "assets": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/rest.json",
+      "local": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/rest.json",
+      "bytes": 329839,
+      "sha256": "b14a3e8301adfeb3e23938186f4cb01883287659a912b677c14e26c612ad5dea"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/butterfly2_256.ktx2",
+      "local": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/butterfly2_256.ktx2",
+      "bytes": 11734,
+      "sha256": "4c21b48f101fcaa710029f85649dabb4a13ee3924dafbc67deac821b1db9f1dc"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/Ren-person-thumb.png",
+      "local": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Ren-person-thumb.png",
+      "bytes": 462193,
+      "sha256": "e38c79e1de5e3f461e5cea3916f84656df77f9133134a1c6fe00a89a45930080"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/material.png",
+      "local": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/material.png",
+      "bytes": 9357,
+      "sha256": "7d1c5ab2429ee89e09e5c85493ea9a47842f632ffdb54b8da8cd24200800c8e7"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/Checkout_HatEffect_Mobile_SolidHat.png",
+      "local": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/Checkout_HatEffect_Mobile_SolidHat.png",
+      "bytes": 1514573,
+      "sha256": "7bd248c8864a942be504d4fc3e7d7ab0f5f0407419b0ab168c951e2a604f77f2"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/deliveryimage.png",
+      "local": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/deliveryimage.png",
+      "bytes": 27771,
+      "sha256": "57e327face7625ee6d66f74f04df3712d0a8573d288f220d263980b169beacea"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/ren-edition-emojis.zip",
+      "local": "/mirror/cdn.shopify.com/s/files/1/0951/3130/4218/files/ren-edition-emojis.zip",
+      "bytes": 857854,
+      "sha256": "ee47bf5edb88395c11af4fba79b89916d9b1c30801a15ba7d62d93bc9358def1"
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/empty_warehouse_01_1k.hdr",
+      "local": "/mirror/dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/empty_warehouse_01_1k.hdr",
+      "bytes": 1672140,
+      "sha256": "9b3d611cadc32c3a0c7e084ce5611c0650293881c4a041e7fa13748fe0dc6451"
+    }
+  ]
+}

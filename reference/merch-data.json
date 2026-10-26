@@ -1,0 +1,82 @@
+{
+  "routes/($locale).editions.winter2026.merch": {
+    "data": {
+      "product": {
+        "id": "gid://shopify/Product/10025507324186",
+        "handle": "beanie",
+        "title": "Beanie",
+        "descriptionHtml": "<p><meta charset=\"utf-8\"><meta charset=\"utf-8\"><span></span><span></span><span>A fine knit hat for the thinkers, dreamers, and doers shaping the future. Bonus: You\u2019ll be easy to spot in a crowd.</span></p>",
+        "productType": "",
+        "variant": {
+          "id": "51229773562138",
+          "availableForSale": true,
+          "title": "Default Title",
+          "price": {
+            "amount": "14.52",
+            "currencyCode": "USD"
+          },
+          "selectedOptions": [
+            {
+              "name": "Title",
+              "value": "Default Title"
+            }
+          ]
+        },
+        "media": {
+          "__typename": "MediaImage",
+          "id": "gid://shopify/MediaImage/44050667143450",
+          "alt": "",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/Ren-person-thumb.png?v=1765254342",
+            "width": 757,
+            "height": 757
+          }
+        }
+      },
+      "merchContent": {
+        "checkoutLabel": "Checkout",
+        "closeAriaLabel": "Close modal",
+        "decreaseAriaLabel": "Decrease amount",
+        "eyebrow": "Renaissance Person",
+        "finalSale": "All sales are final",
+        "increaseAriaLabel": "Increase amount",
+        "loading": "Loading products...",
+        "materialImage": {
+          "altText": "",
+          "height": 60,
+          "id": "gid://shopify/ImageSource/44049320706330",
+          "url": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/material.png?v=1764341710",
+          "width": 62
+        },
+        "materialLabel": "Fine knit",
+        "materialTooltip": "100% acrylic Fine knit One size Made in the USA",
+        "materialTooltipAriaLabel": "More information about the material",
+        "mobileBackground": {
+          "altText": "",
+          "height": 1748,
+          "id": "gid://shopify/ImageSource/44135200063770",
+          "url": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/Checkout_HatEffect_Mobile_SolidHat.png?v=1765308334",
+          "width": 804
+        },
+        "noProduct": "No product available at this time.",
+        "noRefunds": "We do not offer refunds or exchanges.",
+        "quantity": "Quantity",
+        "removeAriaLabel": "Remove from cart",
+        "shippingImage": {
+          "altText": "",
+          "height": 108,
+          "id": "gid://shopify/ImageSource/44050844713242",
+          "url": "https://cdn.shopify.com/s/files/1/0951/3130/4218/files/deliveryimage.png?v=1764361978",
+          "width": 200
+        },
+        "shippingLabel": "Free shipping",
+        "shippingTooltip": "Orders shipped outside the United States may be subject to additional duties and taxes. Additional duties and taxes are collected during checkout and delivered duties paid.",
+        "shippingTooltipAriaLabel": "More information about shipping",
+        "sizeLabel": "Standard size",
+        "soldOut": "Sold out",
+        "subtotal": "Subtotal",
+        "taxes": "Taxes calculated at checkout"
+      }
+    }
+  }
+}

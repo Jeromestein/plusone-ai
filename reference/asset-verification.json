@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "assets": 927,
+  "bytes": 465039957,
+  "byExtension": {
+    ".css": 4,
+    ".glb": 50,
+    ".hdr": 1,
+    ".jpg": 51,
+    ".js": 68,
+    ".json": 33,
+    ".ktx2": 46,
+    ".mp4": 61,
+    ".png": 133,
+    ".riv": 27,
+    ".svg": 37,
+    ".ttf": 2,
+    ".txt": 3,
+    ".wasm": 4,
+    ".webm": 41,
+    ".webp": 358,
+    ".woff2": 7,
+    ".zip": 1
+  },
+  "theatreTimelines": 13,
+  "errors": []
+}
