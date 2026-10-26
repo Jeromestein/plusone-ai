@@ -8,6 +8,7 @@ import "./complete-edition.css";
 import "./opening.css";
 import "./plusone-brand.css";
 import "./plusone-chapters.css";
+import "./plusone-music.css";
 
 export const metadata: Metadata = {
   title: brand.title,

@@ -1,6 +1,7 @@
 "use client";
 
 import { PlusOneMark } from "@/components/brand/PlusOneMark";
+import { BackgroundMusic } from "@/components/brand/BackgroundMusic";
 import { services, type ServiceSelection } from "@/lib/brand/content";
 
 export function EditionHeader({ loading, onExplore }: {
@@ -25,6 +26,7 @@ export function EditionHeader({ loading, onExplore }: {
         <button className="plusone-header-cta" type="button" aria-haspopup="dialog" onClick={() => onExplore("overview")}>
           Explore services <span aria-hidden="true">↗</span>
         </button>
+        <BackgroundMusic />
         <button className="plusone-menu-trigger" type="button" aria-label="Open services menu" aria-haspopup="dialog" onClick={() => onExplore("overview")}>
           <span /><span />
         </button>

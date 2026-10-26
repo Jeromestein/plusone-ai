@@ -23,6 +23,7 @@ For Vercel, use the Next.js preset, automatic install detection, and the default
 - Shopify and TikTok are platforms within the e-commerce offering. One labeled Shop Pay platform illustration remains; the former Shopify release announcements and external merchandise checkout are removed.
 - The retained hat interaction opens an illustrative storefront panel. Globe dragging, the key popup, camera motion, composition lines, and scene transitions remain.
 - The PlusOne loading dot orbits the numeral and returns to its upper-right position when the artwork is ready. Reduced motion, fallback recovery, focus management, and Escape dismissal are supported.
+- The header has an icon-only background-music player: animated notes and Play/Pause, with no volume slider. The local MP3 is loaded on demand, loops, and retains its position when paused; a reload starts with music off. Track details are in `public/audio/README.md`.
 - Inquiry buttons currently open service information. A real email or booking destination has not been provided.
 
 ## Source map

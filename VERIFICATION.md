@@ -2,6 +2,16 @@
 
 The latest project-copy checks are recorded first. Previous UI evidence belongs to the source checkout; generated screenshots and browser reports were not copied into this project. Later sections preserve historical reconstruction, package-manager migration, and opening-preview evidence; they do not describe the current content or imply that a new production build was run.
 
+## Background music — October 26, 2026
+
+- Copied the user-provided DAKOOKA MP3 to `public/audio/dakooka-anime-vibe-slow.mp3` without transcoding. SHA-256 matches the original; size is 5,559,231 bytes. Track metadata and its checksum are recorded alongside the asset.
+- Added an icon-only header control: musical notes animate during playback, with a Play/Pause symbol. No visible Music on/off text or volume control. Reduced-motion styling disables the note animation.
+- Codex in-app browser at `http://127.0.0.1:3001/`: a fresh reload showed no audio source, paused state, and position 0. Clicking Play decoded the MP3 (duration 153.947619 seconds), advanced playback, and changed the button to Pause. Pausing stopped the note animation and retained position 27.116315; resuming advanced to 34.297726. The audio element has looping enabled. Space on the focused control paused playback.
+- Desktop, 390 px, and 320 px layouts were inspected. At 320 px the document remained 320 px wide and the music control and menu did not overlap. Temporary viewport overrides were reset.
+- Captures: `output/playwright/music-mobile.png`, `music-header-mobile.png`, and `music-desktop.png`.
+- `pnpm typecheck` and whitespace checks passed. No production build, commit, push, or deployment was performed. Physical-device audio output and a complete song-length loop were not tested.
+- The original port 3000 server belongs to the earlier checkout. A preview for this directory was started with `pnpm exec next dev --hostname 127.0.0.1 --port 3001` and remains running. Its first restricted run failed to start the macOS file watcher; the approved local process started successfully.
+
 ## Independent project directory — October 26, 2026
 
 - Created the separate `plusone-ai/` project from 1,158 tracked files in the existing preview. The source checkout was left unchanged.
