@@ -10,6 +10,7 @@ import { fallbackImages } from "@/lib/renaissance/assets";
 import type { Stage } from "@/lib/renaissance/create-stage";
 import { PlusOneMark } from "@/components/brand/PlusOneMark";
 import { ServicesDialog } from "@/components/brand/ServicesDialog";
+import { useActiveService } from "@/components/brand/useActiveService";
 import type { ServiceSelection } from "@/lib/brand/content";
 import { services } from "@/lib/brand/content";
 import { artworkScenes, type ArtworkScene } from "@/lib/brand/chapters";
@@ -25,6 +26,7 @@ export function RenaissanceExperience({ children }: { children: ReactNode }) {
   const [attempt, setAttempt] = useState(0);
   const [servicePanel, setServicePanel] = useState<ServiceSelection | null>(null);
   const opening = useOpeningSequence(status);
+  const activeService = useActiveService();
 
   useEffect(() => {
     const openServices = (event: Event) => {
@@ -134,13 +136,6 @@ export function RenaissanceExperience({ children }: { children: ReactNode }) {
           "--fallback-image",
           `url("${fallbackImages[index][width < 768 ? 1 : 0]}")`,
         );
-        document
-          .querySelectorAll<HTMLAnchorElement>(".plusone-service-navigation a")
-          .forEach((a) => {
-            if (a.hash === `#${chapter?.id}`)
-              a.setAttribute("aria-current", "location");
-            else a.removeAttribute("aria-current");
-          });
         previousScroll = scroll;
       }
       stage?.frame(
@@ -205,7 +200,7 @@ export function RenaissanceExperience({ children }: { children: ReactNode }) {
           <div className="painting-fallback" />
           <canvas key={attempt} ref={setCanvas} />
         </div>
-        <EditionHeader loading={status === "loading"} onExplore={setServicePanel} />
+        <EditionHeader loading={status === "loading"} onExplore={setServicePanel} activeService={activeService} />
         <div
           className="plusone-opening-mark"
           aria-hidden={opening.phase === "revealing" || opening.phase === "complete"}
@@ -249,7 +244,7 @@ export function RenaissanceExperience({ children }: { children: ReactNode }) {
           }
         >
           <CompositionGrid />
-          <HeroNavigation onExplore={setServicePanel} />
+          <HeroNavigation onExplore={setServicePanel} activeService={activeService} />
         </div>
         <main id="main-content">
           <section

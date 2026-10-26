@@ -1,7 +1,7 @@
 import type { CSSProperties } from "react";
-import { services, type ServiceSelection } from "@/lib/brand/content";
+import { services, type ServiceId, type ServiceSelection } from "@/lib/brand/content";
 
-export function HeroNavigation({ onExplore }: { onExplore: (selection: ServiceSelection) => void }) {
+export function HeroNavigation({ onExplore, activeService }: { onExplore: (selection: ServiceSelection) => void; activeService: ServiceId | null }) {
   return (
     <aside className="hero-navigation plusone-hero-navigation" data-section-name="side-nav" aria-label="Introducing PlusOne AI">
       <div className="hero-navigation-frame plusone-hero-frame">
@@ -14,14 +14,15 @@ export function HeroNavigation({ onExplore }: { onExplore: (selection: ServiceSe
         </div>
         <div className="plusone-hero-body">
           <p className="plusone-hero-description">We build AI tools, websites, apps, and online stores — and help businesses grow.</p>
-          <nav className="plusone-service-navigation" aria-label="Explore our services">
+          <nav className="plusone-service-navigation" aria-label="Service chapters">
             <ul>
               {services.map((service, index) => (
                 <li key={service.id} style={{ "--index": index + 1 } as CSSProperties}>
-                  <button type="button" aria-haspopup="dialog" onClick={() => onExplore(service.id)}>
-                    <span>{service.label}</span>
+                  <a className="plusone-service-link" href={`#${service.id}`} aria-current={activeService === service.id ? "location" : undefined}>
+                    <span className="plusone-service-marker" aria-hidden="true">+</span>
+                    <span className="plusone-service-label">{service.label}</span>
                     <span className="chapter-numeral" aria-hidden="true">{service.numeral}</span>
-                  </button>
+                  </a>
                 </li>
               ))}
             </ul>

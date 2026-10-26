@@ -13,7 +13,7 @@ export function BrandChapters() {
         const service = services.find((item) => item.id === chapter.service);
         return (
           <section key={chapter.scene} id={binding.section} className="plusone-chapter"
-            data-section-id={binding.section} data-artwork-scene={chapter.scene}
+            data-section-id={binding.section} data-artwork-scene={chapter.scene} data-nav-service={chapter.service} tabIndex={-1}
             aria-labelledby={`${binding.section}-title`}>
             <div className="plusone-chapter-content">
               <div className="plusone-chapter-opening" data-nav-theme={chapter.scene === "developer" ? "light" : "dark"}>

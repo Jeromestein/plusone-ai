@@ -159,3 +159,14 @@ This pass changes the header, hero, service introduction panel, loading mark, ho
 - The retained downstream Rive demos emit existing missing-text-run warnings when visited. Their replacement is tracked in Phase 2. No all-chapter or production regression pass was performed in this iteration.
 
 Screenshots are stored in `output/playwright/plusone-hero-desktop.png`, `plusone-hero-mobile.png`, `plusone-loading.png`, and `plusone-fallback.png`. The Codex-started `pnpm dev` server remains running at `http://127.0.0.1:3000` for review. No commit, push, or deployment was performed.
+
+## Service chapter navigation — 2026-10-26
+
+The sidebar and header now link to service chapters. The overview CTA retains its service dialog. Scroll selection follows the chapter's service group independently of the artwork renderer, with no service selected in the hero, process, partnership, or footer.
+
+- Reused the existing `plusone-ai` development server at `http://127.0.0.1:3001`; no server restart or production build.
+- `pnpm typecheck` and `git diff --check` passed.
+- Codex in-app browser, desktop 1280 × 720: checked all five sidebar destinations, header clearance, normal-weight inactive entries, plus/underline selection, light-paper and dark-artwork colors, and a distinct keyboard focus outline. Scrolling through Connected workflows retained AI selection; Shopify content retained E-commerce selection. Process and footer cleared the selection. The overview dialog still opened and closed.
+- Mobile viewport checks at 390 × 844 and 320 × 640: chapter menu fit without horizontal overflow. Selecting Websites closed the menu, restored document scrolling, and navigated below the header. Escape closed the menu and restored focus to its trigger. These are viewport emulations, not physical-device tests.
+- No browser error-level logs were recorded in this preview. The artwork renderer, scene sequence, source assets, and audio behavior were not changed; no comprehensive artwork regression was performed.
+- Screenshots: `output/playwright/navigation-desktop.png` and `output/playwright/navigation-mobile.png`. Verification was performed locally; production deployment has not been verified.

@@ -34,6 +34,7 @@
 - [x] Replace the merchandise purchase flow with an interactive storefront concept; preserve hat, globe, and key interactions.
 - [x] Remove obsolete product search, interaction data, and unused announcement components.
 - [x] Add a PlusOne AI footer and working links from service panels to service chapters.
+- [x] Turn the sidebar and header service names into chapter links, group scroll highlights by service, and add a compact mobile chapter menu.
 - [x] Add the user-provided local background track with animated musical notes and Play/Pause only; load it on demand and keep audio off initially.
 - [x] Rename the package to `plusone-ai` and update project documentation.
 - [ ] Audit branding and product UI embedded in textures, models, and fallback images.

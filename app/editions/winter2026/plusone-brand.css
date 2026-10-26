@@ -30,9 +30,9 @@
   vertical-align: middle;
 }
 .plusone-desktop-nav { display: flex; gap: 26px; margin-left: auto; }
-.plusone-desktop-nav button { padding: 10px 0; font-size: 13px; }
-.plusone-desktop-nav button:hover,
-.plusone-service-navigation button:hover,
+.plusone-desktop-nav a { padding: 10px 0; font-size: 13px; }
+.plusone-desktop-nav a[aria-current="location"] { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1px; }
+.plusone-desktop-nav a:hover,
 .plusone-hero-cta:hover { opacity: 0.65; }
 .plusone-header-cta {
   display: flex;
@@ -75,6 +75,7 @@
 }
 .renaissance-experience[data-brand-sidebar-theme="dark"] .plusone-hero-navigation { color: #f7f7ee; }
 .renaissance-experience[data-brand-sidebar-theme="light"] .plusone-hero-navigation { color: #292d22; }
+.plusone-hero-navigation { transition: color 0.25s ease; }
 .plusone-eyebrow {
   margin: 0 0 14px;
   font: 400 9px/1.4 Inter, Arial, sans-serif;
@@ -94,16 +95,62 @@
   text-wrap: pretty;
 }
 .plusone-service-navigation ul { list-style: none; margin: 0; padding: 0; width: 100%; }
-.plusone-service-navigation button {
+.plusone-service-navigation .plusone-service-link {
+  position: relative;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  gap: 8px;
   width: 100%;
-  padding: 4px 0;
-  font: 700 19px/1.05 NeueMontreal, Helvetica, Arial, sans-serif;
+  min-height: 34px;
+  padding: 7px 0 7px 17px;
+  font: 400 17px/1.2 Inter, Arial, sans-serif;
   letter-spacing: -0.02em;
   text-align: left;
   pointer-events: auto;
+  opacity: 0.72;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 17px 100%;
+  background-size: 0 1px;
+  transition: opacity 0.2s ease, background-size 0.25s ease;
+}
+.plusone-service-link .plusone-service-marker {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 7px);
+  font: 400 14px/1 Inter, Arial, sans-serif;
+  opacity: 0;
+  transform: scale(0.7);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.plusone-service-label { transition: transform 0.2s ease; }
+.plusone-service-navigation .plusone-service-link[aria-current="location"] {
+  opacity: 1;
+  font-weight: 600;
+  background-size: calc(100% - 17px) 1px;
+}
+.plusone-service-link[aria-current="location"] .plusone-service-marker { opacity: 1; transform: scale(1); }
+@media (hover: hover) {
+  .plusone-service-navigation .plusone-service-link:hover { opacity: 1; background-size: calc(100% - 17px) 1px; }
+  .plusone-service-link:hover .plusone-service-label { transform: translateX(3px); }
+}
+.plusone-service-navigation .plusone-service-link:focus-visible,
+.plusone-hero-cta:focus-visible,
+.plusone-header :is(a, button):focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 4px;
+}
+/* The document already reserves 50px with scroll-padding-top. */
+.plusone-chapter { scroll-margin-top: 42px; }
+.plusone-chapter-menu { max-width: 440px; }
+.plusone-chapter-menu .plusone-dialog-top { margin-bottom: 28px; }
+.plusone-chapter-menu .plusone-eyebrow { margin: 0; }
+.plusone-chapter-menu .plusone-service-link { min-height: 48px; padding-block: 14px; }
+.plusone-chapter-menu .plusone-hero-cta { margin-top: 28px; padding-block: 14px; }
+@media (max-width: 939px) {
+  .plusone-chapter { scroll-margin-top: 34px; }
+  [data-scrolled="true"] .plusone-hero-navigation { visibility: hidden; }
 }
 .plusone-hero-cta {
   display: flex;
@@ -159,7 +206,7 @@
   [data-scrolled="true"] .plusone-hero-frame { top: 92px; left: 24px; translate: 0; width: 164px; aspect-ratio: auto; padding: 0; gap: 24px; }
   [data-scrolled="true"] .plusone-hero-title { font-size: 31px; }
   [data-scrolled="true"] :is(.plusone-eyebrow, .plusone-hero-description) { display: none; }
-  [data-scrolled="true"] .plusone-service-navigation button { font-size: 15px; padding: 6px 0; }
+  [data-scrolled="true"] .plusone-service-navigation .plusone-service-link { font-size: 15px; min-height: 36px; padding-block: 9px; }
   [data-scrolled="true"] .plusone-service-navigation :is(ul, li) { translate: none !important; width: 100%; }
   [data-scrolled="true"] .plusone-hero-cta { font-size: 10px; }
 }
@@ -192,4 +239,6 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .plusone-opening-mark, .plusone-hero-frame, .plusone-hero-heading, .plusone-hero-body { transition: none; }
+  .plusone-hero-navigation, .plusone-service-navigation .plusone-service-link,
+  .plusone-service-marker, .plusone-service-label { transition: none; }
 }
